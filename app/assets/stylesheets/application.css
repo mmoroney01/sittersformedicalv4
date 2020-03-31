@@ -13,3 +13,149 @@
  *= require_tree .
  *= require_self
  */
+
+.login_title_rosie{
+  display: flex; /* equal height of the children */
+}
+
+.login_div {
+  padding:1%;
+  float: left;
+  width: 30%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+
+}
+
+.title_rosie {
+  float: left;
+  width:38%;
+  padding:1%;
+  overflow: hidden;
+  text-align:center;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+}
+
+.disclaimer_div{
+  float:left;
+  padding:1%;
+  width:30%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+}
+
+
+.container {
+    display:flex;
+}  
+
+.hero_div_register{
+  float:left;
+  width:32%;
+  padding:1%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+  text-align:center;
+}
+
+.volunteer_div_register{
+  float:left;
+  width:32%;
+  padding:1%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+  text-align:center;    
+}
+
+.everyone_div_register{
+  float:left;
+  width:32%;
+  padding:1%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+  text-align:center;  
+}
+
+.hero_volunteer_div {
+  display:flex;
+}
+
+.hero_div {
+  float:left;
+  width:48%;
+  padding:1%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+  text-align:center;
+}
+
+.volunteer_div{
+  float:left;
+  width:48%;
+  padding:1%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+  text-align:center;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-basis: 0 0 32.17%;
+  }  
+
+  .one_result {
+    padding-left:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin: 0 auto;
+    list-style: none;
+    flex-basis:0 0 32.17%;
+    width:32.17%;
+    border-style:solid;
+    border-color:black;
+    border-width:thin;
+  }  
+
+ .app_title {
+  text-align:center;
+  font-size-adjust:1;
+ }
+
+  .disclaimer {
+   width:40%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   border-color:black;
+   border-style:solid;
+   margin-bottom: 2%;
+   margin-left: 2%;
+}
+
+  #search-results-append {  
+  
+  }  
+
+  .register_page {
+    border-color:black;
+    border-style:solid;
+  }
+
+.index_search_top_bar {
+  padding-top:20px;
+  padding-left:20px;
+  border-color:black;
+  border-style:solid;
+  border-width:thin;
+}

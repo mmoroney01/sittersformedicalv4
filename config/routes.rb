@@ -1,10 +1,15 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
-devise_for :users, controllers: {
+Rails.application.routes.draw do
+  get '/' => 'home#index'
+  get '/users/hero_index' => 'users#hero_index'
+  get '/users/volunteer_index' => 'users#volunteer_index'
+
+  devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',
     registrations: 'users/registrations'
-}
-	root to: "home#index"
+  }
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
