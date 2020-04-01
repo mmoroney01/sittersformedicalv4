@@ -10,6 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   def create
+    p Rails.configuration.database_configuration["development"]["database"]
     @user = User.create(user_params)
     sign_in @user
     redirect_to '/'

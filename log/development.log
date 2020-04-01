@@ -1554,3 +1554,591 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 7717)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:12:04 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4451)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mmoroney/Desktop/sittersformedicalv4/public/packs
+[Webpacker] warning ../../package.json: No license field
+
+[Webpacker] Hash: 49fdb268f3ececfc90dc
+Version: webpack 4.42.1
+Time: 4413ms
+Built at: 03/31/2020 1:12:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bdfffb08bd607fda86ff.js    828 KiB  application  [emitted] [immutable]  application
+js/application-bdfffb08bd607fda86ff.js.map    882 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bdfffb08bd607fda86ff.js js/application-bdfffb08bd607fda86ff.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+Completed 200 OK in 5663ms (Views: 5597.3ms | ActiveRecord: 7.9ms | Allocations: 40086)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-03-31 13:12:12 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DjL9UvIg8fAShvdeSzVgVp+7sxEGHSQpPbfYB4JSc2w/galdu6k0YeuFCBxl8tCHKDXqWJnwVd0V63X8j/vmtA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms | Allocations: 4531)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:12:12 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-31 13:12:12 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 599)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 6067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 11239)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-31 13:12:17 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"tUtaLisdld0U3tS3tSHKejDqwzjgueB7i3PVuNP10hzmB+UThzeWS0/gR9oRT3N6DRx921fhM/LXg1MZYMLnaA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 0.9ms | Allocations: 5115)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:12:17 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 3012)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 7726)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:12:22 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+  
+ActionView::MissingTemplate (Missing template users/sitter_index.js.erb, application/sitter_index.js.erb with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/sittersformedicalv4/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actiontext-6.0.2.2/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.2.2/app/views"
+):
+  
+app/controllers/users_controller.rb:22:in `block (2 levels) in volunteer_index'
+app/controllers/users_controller.rb:20:in `volunteer_index'
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:14:39 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 8.4ms | ActiveRecord: 4.6ms | Allocations: 33316)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:14:41 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/sitter_index.js.erb
+  Rendered users/sitter_index.js.erb (Duration: 1.9ms | Allocations: 1475)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4160)
+
+
+  
+ActionView::Template::Error (Missing partial users/_sitter_results with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mmoroney/Desktop/sittersformedicalv4/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actiontext-6.0.2.2/app/views"
+  * "/home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.2.2/app/views"
+):
+    1: $("#search-results-append").empty();
+    2: $("#search-results-append").append("<%= j render(:partial => 'users/sitter_results') %>");
+  
+app/views/users/sitter_index.js.erb:2
+app/controllers/users_controller.rb:22:in `block (2 levels) in volunteer_index'
+app/controllers/users_controller.rb:20:in `volunteer_index'
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:15:34 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.5ms | Allocations: 9646)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:15:36 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/sitter_index.js.erb
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."wednesday" = $2[0m  [["hero", 1], ["wednesday", 1]]
+  ↳ app/views/users/_sitter_results.html.erb:1
+  Rendered users/_sitter_results.html.erb (Duration: 9.8ms | Allocations: 6132)
+  Rendered users/sitter_index.js.erb (Duration: 36.9ms | Allocations: 37579)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.6ms | Allocations: 40227)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:15:40 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  Rendered users/_hcw_results.html.erb (Duration: 236.5ms | Allocations: 165001)
+  Rendered users/hcw_index.js.erb (Duration: 237.9ms | Allocations: 165302)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.6ms | Allocations: 166634)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x000055f72be89450>:0x00007f6c700139a0>
+Did you mean?  rescue):
+    2:   <div class="login_div">
+    3:     <h2>COVID-19 Volunteers For Victory</h1>
+    4:     <h2>Log in</h2>
+    5:   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    6:     <div class="field">
+    7:       <%= f.label :email %><br>
+    8:       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/users/_hcw_results.html.erb:5
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:11:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:9:in `hero_index'
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:15:42 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  Rendered users/_hcw_results.html.erb (Duration: 281.4ms | Allocations: 163868)
+  Rendered users/hcw_index.js.erb (Duration: 281.7ms | Allocations: 163934)
+Completed 500 Internal Server Error in 284ms (ActiveRecord: 0.6ms | Allocations: 165125)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x000055f72be89450>:0x000055f72c83e428>
+Did you mean?  rescue):
+    2:   <div class="login_div">
+    3:     <h2>COVID-19 Volunteers For Victory</h1>
+    4:     <h2>Log in</h2>
+    5:   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    6:     <div class="field">
+    7:       <%= f.label :email %><br>
+    8:       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/users/_hcw_results.html.erb:5
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:11:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:9:in `hero_index'
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:16:03 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3058)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 10.2ms | ActiveRecord: 6.5ms | Allocations: 31444)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:16:05 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  Rendered users/_hcw_results.html.erb (Duration: 223.1ms | Allocations: 163874)
+  Rendered users/hcw_index.js.erb (Duration: 223.4ms | Allocations: 163940)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.7ms | Allocations: 165317)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x000055f7296c4c58>:0x000055f729e66920>
+Did you mean?  rescue):
+    2:   <div class="login_div">
+    3:     <h2>COVID-19 Volunteers For Victory</h1>
+    4:     <h2>Log in</h2>
+    5:   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    6:     <div class="field">
+    7:       <%= f.label :email %><br>
+    8:       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/users/_hcw_results.html.erb:5
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:13:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:11:in `hero_index'
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:20:03 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 9.2ms | ActiveRecord: 3.6ms | Allocations: 33187)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:20:05 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  Rendered users/_hcw_results.html.erb (Duration: 262.2ms | Allocations: 164939)
+  Rendered users/hcw_index.js.erb (Duration: 263.2ms | Allocations: 165231)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.6ms | Allocations: 167906)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x000055f72c8700e0>:0x000055f72c86e3f8>
+Did you mean?  rescue):
+    2:   <div class="login_div">
+    3:     <h2>COVID-19 Volunteers For Victory</h1>
+    4:     <h2>Log in</h2>
+    5:   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    6:     <div class="field">
+    7:       <%= f.label :email %><br>
+    8:       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/users/_hcw_results.html.erb:5
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:13:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:11:in `hero_index'
+Started GET "/" for 127.0.0.1 at 2020-03-31 13:20:27 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3901)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 9641)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-03-31 13:20:28 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."yes_transit" = $2 LIMIT $3[0m  [["volunteer", 1], ["yes_transit", 1], ["LIMIT", 11]]
+  ↳ app/views/users/hcw_index.js.erb:2
+  Rendered users/_hcw_results.html.erb (Duration: 247.6ms | Allocations: 164931)
+  Rendered users/hcw_index.js.erb (Duration: 248.8ms | Allocations: 165226)
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.8ms | Allocations: 167847)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007f6c906d0cf0>:0x00007f6c906c10c0>
+Did you mean?  rescue):
+    2:   <div class="login_div">
+    3:     <h2>COVID-19 Volunteers For Victory</h1>
+    4:     <h2>Log in</h2>
+    5:   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    6:     <div class="field">
+    7:       <%= f.label :email %><br>
+    8:       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/users/_hcw_results.html.erb:5
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:13:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:11:in `hero_index'
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:25:52 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms | Allocations: 1014)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:25:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.9ms | Allocations: 606)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 30.9ms | Allocations: 6550)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 56.2ms | ActiveRecord: 5.8ms | Allocations: 39343)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:25:59 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"C0yr/cfWcEg/rQpaa/c2xqVrEMgy+wnOjsJLkIMVfMoaEfFVBaIpBHVLP4k//HJIYk69dvLtDMO1sHvmPYvE/Q==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 2.1ms | Allocations: 5667)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:25:59 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3913)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 9291)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-04-01 08:26:05 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/sitter_index.js.erb
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."babysitting" = $2[0m  [["hero", 1], ["babysitting", 1]]
+  ↳ app/views/users/_sitter_results.html.erb:1
+  Rendered users/_sitter_results.html.erb (Duration: 16.3ms | Allocations: 6218)
+  Rendered users/sitter_index.js.erb (Duration: 52.5ms | Allocations: 38610)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 1.2ms | Allocations: 41302)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-04-01 08:26:09 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"1", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/sitter_index.js.erb
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."babysitting" = $2 AND "users"."saturday" = $3[0m  [["hero", 1], ["babysitting", 1], ["saturday", 1]]
+  ↳ app/views/users/_sitter_results.html.erb:1
+  Rendered users/_sitter_results.html.erb (Duration: 5.7ms | Allocations: 3060)
+  Rendered users/sitter_index.js.erb (Duration: 26.6ms | Allocations: 20615)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 21824)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-01 08:26:11 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"leEruv3fLP/UcNkSrdrWzbRjXMLZbH2KK8Q154DQmu9DSRlhoGk4wQLmUzycEjeFqikanaoh68YKraik4apR1w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms | Allocations: 4711)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:26:11 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:26:11 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3884)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7495)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-01 08:31:19 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 197)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 5051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 9674)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-01 08:31:41 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"JbxZvGu2gzUo+y8jslEEULw9ZqBs4iAn9YMdo637h2IFeG5fBq3gfFsJsusoStwWYH3x5rr2DxXSkuQBW5zMNQ==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"rest@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"55566", "location"=>"", "cell_number"=>"234-666-7777", "county"=>"Cook"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rest@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "location", "first_name", "last_name", "county", "cell_number", "services_needed_or_provided", "yes_transit", "no_transit", "age_16", "age_17", "age_18_up", "zip_code", "hero", "volunteer", "babysitting", "grocery_shopping", "e_learning_assistance", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "morning", "afternoon", "evening", "night", "c_morning", "c_afternoon", "c_evening", "c_night", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36) RETURNING "id"[0m  [["email", "rest@test.com"], ["encrypted_password", "$2a$11$H2ARdIoT5wSi4t/s0ucGu.8dOqjMpC2qRlbaKLEsQDaoquqJUFl12"], ["location", ""], ["first_name", ""], ["last_name", ""], ["county", "Cook"], ["cell_number", "234-666-7777"], ["services_needed_or_provided", ""], ["yes_transit", 0], ["no_transit", 0], ["age_16", 0], ["age_17", 0], ["age_18_up", 0], ["zip_code", 55566], ["hero", 0], ["volunteer", 0], ["babysitting", 0], ["grocery_shopping", 0], ["e_learning_assistance", 0], ["sunday", 0], ["monday", 0], ["tuesday", 0], ["wednesday", 0], ["thursday", 0], ["friday", 0], ["saturday", 0], ["morning", 0], ["afternoon", 0], ["evening", 0], ["night", 0], ["c_morning", 0], ["c_afternoon", 0], ["c_evening", 0], ["c_night", 0], ["created_at", "2020-04-01 13:31:41.764313"], ["updated_at", "2020-04-01 13:31:41.764313"]]
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 11.1ms | Allocations: 5205)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:31:41 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 301], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 7738)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-01 08:31:48 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZoAaCPiE5I88Ym37wjaOJcWPcIjMNxjXLhQCnCsMjvw1TF90DV5ixXp67sF0cDAXcQmYXcrIoOZX4mWlPvlzjw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 301], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2236)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:31:48 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:31:48 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3883)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 7473)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-01 08:32:33 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3375)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6910)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-01 08:32:51 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"NkPbrgc9jKPXrVOmClFuMc4URF+iB1gR2X3stgZXoOi2bQHC0rab4tS90YKtEpT0fQW3fTxieK1tItrJADZyYg==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"beck@beck.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"44443", "location"=>"", "cell_number"=>"224-777-5500", "county"=>"Cook"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beck@beck.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "location", "first_name", "last_name", "county", "cell_number", "services_needed_or_provided", "yes_transit", "no_transit", "age_16", "age_17", "age_18_up", "zip_code", "hero", "volunteer", "babysitting", "grocery_shopping", "e_learning_assistance", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "morning", "afternoon", "evening", "night", "c_morning", "c_afternoon", "c_evening", "c_night", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36) RETURNING "id"[0m  [["email", "beck@beck.com"], ["encrypted_password", "$2a$11$G.f/V2KmyScco1CGYR.ezuN/4h0CfjATMSKsa/gAaatR59m/GQJVq"], ["location", ""], ["first_name", ""], ["last_name", ""], ["county", "Cook"], ["cell_number", "224-777-5500"], ["services_needed_or_provided", ""], ["yes_transit", 0], ["no_transit", 0], ["age_16", 0], ["age_17", 0], ["age_18_up", 0], ["zip_code", 44443], ["hero", 0], ["volunteer", 0], ["babysitting", 0], ["grocery_shopping", 0], ["e_learning_assistance", 0], ["sunday", 0], ["monday", 0], ["tuesday", 0], ["wednesday", 0], ["thursday", 0], ["friday", 0], ["saturday", 0], ["morning", 0], ["afternoon", 0], ["evening", 0], ["night", 0], ["c_morning", 0], ["c_afternoon", 0], ["c_evening", 0], ["c_night", 0], ["created_at", "2020-04-01 13:32:51.198701"], ["updated_at", "2020-04-01 13:32:51.198701"]]
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 7.2ms | Allocations: 4861)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:32:51 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2999)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 7747)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-01 08:33:04 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G5ZktwgbM0Znhq9gnzmob9DbmXQHjEqkapxsm6xmgp/W5YTjc4sxhr/dBVuF3POu1dOJo8FglfT9Vozo5vJNWw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 2239)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:33:04 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 292)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:33:04 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3874)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 7471)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 08:41:05 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3944)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 29726)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-01 08:41:07 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3418)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7183)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-01 08:41:23 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"MjtqAjWZgOLhPMpHKHYgSwg0QY7eiJqbjMSqepucCBSUrhl+VMfsu9cVYslXB63nKl3N9tSi3QI23tnOYc7hkA==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"vert@horiz.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"44445", "location"=>"", "cell_number"=>"097-666-4499", "county"=>"Cook"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vert@horiz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "location", "first_name", "last_name", "county", "cell_number", "services_needed_or_provided", "yes_transit", "no_transit", "age_16", "age_17", "age_18_up", "zip_code", "hero", "volunteer", "babysitting", "grocery_shopping", "e_learning_assistance", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "morning", "afternoon", "evening", "night", "c_morning", "c_afternoon", "c_evening", "c_night", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36) RETURNING "id"[0m  [["email", "vert@horiz.com"], ["encrypted_password", "$2a$11$M4rBFrlJHpvI01FqDGRF/OcL2e2y/viD6wksQpfvhdHpDB1h7pb8a"], ["location", ""], ["first_name", ""], ["last_name", ""], ["county", "Cook"], ["cell_number", "097-666-4499"], ["services_needed_or_provided", ""], ["yes_transit", 0], ["no_transit", 0], ["age_16", 0], ["age_17", 0], ["age_18_up", 0], ["zip_code", 44445], ["hero", 0], ["volunteer", 0], ["babysitting", 0], ["grocery_shopping", 0], ["e_learning_assistance", 0], ["sunday", 0], ["monday", 0], ["tuesday", 0], ["wednesday", 0], ["thursday", 0], ["friday", 0], ["saturday", 0], ["morning", 0], ["afternoon", 0], ["evening", 0], ["night", 0], ["c_morning", 0], ["c_afternoon", 0], ["c_evening", 0], ["c_night", 0], ["created_at", "2020-04-01 13:41:23.552886"], ["updated_at", "2020-04-01 13:41:23.552886"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 147ms (ActiveRecord: 4.7ms | Allocations: 5506)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 08:41:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 303], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3011)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 1.0ms | Allocations: 8075)
+
+
