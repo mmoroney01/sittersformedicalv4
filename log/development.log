@@ -3388,3 +3388,84 @@ Processing by UsersController#hero_index as JS
 Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 10171)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-01 10:46:54 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 1014)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 10:46:54 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 602)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 6285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 41.1ms | ActiveRecord: 4.7ms | Allocations: 39078)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 10:52:29 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 3656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 11997)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-01 10:52:41 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"cFTufu4Rcm2I7u4qZOSOF72pEsqXtAY3fQc/mPUTccgLnhBWdFzq8FctJ0Blm9fgIxwShgoU1pvTwiRgxzKY2w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 140ms (ActiveRecord: 2.4ms | Allocations: 3055)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-01 10:52:45 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"cFTufu4Rcm2I7u4qZOSOF72pEsqXtAY3fQc/mPUTccgLnhBWdFzq8FctJ0Blm9fgIxwShgoU1pvTwiRgxzKY2w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 200 OK in 140ms (ActiveRecord: 0.5ms | Allocations: 4514)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 10:52:45 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3900)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 9300)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0&commit=Search" for 127.0.0.1 at 2020-04-01 10:52:52 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}, "commit"=>"Search"}
+  Rendering users/sitter_index.js.erb
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."grocery_shopping" = $2[0m  [["hero", 1], ["grocery_shopping", 1]]
+  ↳ app/views/users/_sitter_results.html.erb:1
+  Rendered users/_sitter_results.html.erb (Duration: 9.4ms | Allocations: 5401)
+  Rendered users/sitter_index.js.erb (Duration: 37.0ms | Allocations: 31692)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.2ms | Allocations: 34400)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-01 10:52:57 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/JJmijBkmdlrJH483LJ7HqPU7fUueOvyr/h5VveQ/cT2DGuUqnfI635wXDKwt3bHpsyY2EkRJZKD5HCPLcuQxg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms | Allocations: 2754)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 10:52:57 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-01 10:52:57 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3662)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 7280)
+
+
