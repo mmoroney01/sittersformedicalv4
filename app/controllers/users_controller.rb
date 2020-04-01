@@ -6,8 +6,6 @@ class UsersController < ApplicationController
   def hero_index
     @users = users(user_params)
 
-    p "AAA"
-
     respond_to do |f|
       f.html { redirect_to '/' }
       f.js { render 'hcw_index.js.erb' }

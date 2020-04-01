@@ -1,6 +1,6 @@
 <div class="index_search_top_bar">
   <% if user_signed_in? %>
-    <%= button_to destroy_user_session_path, method: :delete do %>Log out<% end %>
+    <%= button_to "Sign out", destroy_user_session_path, :method => :delete %>
   <% end %>
 
   <h1 style="text-align:center;">Please select only ONE of the following: "I need a Volunteer!" OR "I am Willing to Volunteer"</h3>
