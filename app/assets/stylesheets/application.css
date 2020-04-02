@@ -32,6 +32,15 @@
 
 }
 
+.login_inner {
+  padding: 1%;
+  width: 41%;
+  border-color:black;
+  border-style:solid;
+  border-width: thin;
+
+}
+
 .title_rosie {
   float: left;
   width:38%;
@@ -154,6 +163,7 @@
   .register_page {
     border-color:black;
     border-style:solid;
+    border-width: thin;
   }
 
 .index_search_top_bar {

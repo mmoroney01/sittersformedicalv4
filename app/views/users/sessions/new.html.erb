@@ -1,8 +1,10 @@
 
 <div class="login_title_rosie">
   <div class="login_div">
-    <h2>COVID-19 Volunteers For Victory</h1>
-    <h2>Log in</h2>
+  <h2>COVID-19 Volunteers For Victory</h1>
+
+  <div class="login_inner">
+  <h2>Log in</h2>
     
   <%= form_with(model: User, url: session_path(@user)) do |f| %>
     <div class="field">
@@ -29,9 +31,9 @@
     </div>
   <% end %>  
 
-  <br>  
-
   <%= render "users/shared/links" %>
+  <div class="forgot_password_ajax_div"></div>
+</div>
 
   <br>
 
@@ -45,7 +47,9 @@
     <br><br>
 
     As a high school junior in Cook County, IL, I have friends whose parents are balancing increased work hours with kids who are suddenly at home and they need assistance.
-    <br>
+    
+    <br><br>
+
     <img src="https://images.fastcompany.net/image/upload/w_700,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/06/p-2-90176641-what-the-iconic-rosie-the-riveter-poster-tktktk-1.jpg">
   </div>
 

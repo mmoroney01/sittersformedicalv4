@@ -1,6 +1,8 @@
+<%= button_to "Back", new_session_path(resource_name) %><br>
+
 <h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<%= form_with(model: User, url: registration_path(@user)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
@@ -13,4 +15,4 @@
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+

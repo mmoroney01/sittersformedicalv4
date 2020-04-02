@@ -3469,3 +3469,2153 @@ Processing by Users::SessionsController#new as HTML
 Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 7280)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:11:53 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms | Allocations: 1014)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:11:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 602)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 6285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 36.6ms | ActiveRecord: 4.9ms | Allocations: 41531)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:12:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 514)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 5253)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 10610)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:14:39 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 527)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 22.3ms | ActiveRecord: 4.8ms | Allocations: 38153)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:15:22 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.4ms | Allocations: 132)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 29.7ms | Allocations: 3656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 59.1ms | ActiveRecord: 0.0ms | Allocations: 12131)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:15:33 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3650)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 12126)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:15:37 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 11670)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:15:41 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 12099)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:15:47 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 12528)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:16:17 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5120)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 9735)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:16:57 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3458)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 11402)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:18:00 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 514)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 5254)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 10596)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:20:03 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 250.0ms | Allocations: 142547)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms | Allocations: 144777)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `home_action_path' for #<#<Class:0x000055950fab69c8>:0x000055950fab41a0>):
+    1: <h1>Register</h1>
+    2: <%= button_to "Back", home_action_path %>
+    3: 
+    4: <div class="register_page">
+    5:   
+  
+app/views/users/registrations/new.html.erb:2
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:22:43 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 196)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5395)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 10725)
+
+
+Started POST "/users/sign_up?url=%2F" for 127.0.0.1 at 2020-04-02 08:22:46 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:23:58 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 5003)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 10277)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:23:59 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 7188)
+
+
+Started POST "/users/sign_up?method=get&url=%2F" for 127.0.0.1 at 2020-04-02 08:24:00 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/sign_up?method=get&url=%2F" for 127.0.0.1 at 2020-04-02 08:24:17 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:24:19 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 10266)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:24:20 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 7194)
+
+
+Started POST "/users/sign_up?method=get&url=%2Fusers%2Fsign_up" for 127.0.0.1 at 2020-04-02 08:24:21 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:24:58 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 5475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 16.1ms | ActiveRecord: 3.7ms | Allocations: 33715)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:25:00 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3642)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started POST "/users/sign_up?method=get&url=%2F" for 127.0.0.1 at 2020-04-02 08:25:02 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:25:48 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 4114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 9.1ms | ActiveRecord: 3.6ms | Allocations: 30686)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:26:04 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 7166)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:27:09 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 4900)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 10191)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:27:12 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 525)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 9991)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:27:22 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 514)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5253)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 10580)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:27:24 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 9489)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:27:25 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"aEMhdTM4b9Tpv1yDSOl8KLKVI0XcNkjc5uv46hFe+ToFtNy6rUDDC01IqPO7/haSGLNh1qdAib4IfAT+x5x4oQ=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 467)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"aEMhdTM4b9Tpv1yDSOl8KLKVI0XcNkjc5uv46hFe+ToFtNy6rUDDC01IqPO7/haSGLNh1qdAib4IfAT+x5x4oQ=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 7096)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:27:37 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 10212)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:28:04 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.4ms | Allocations: 603)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 10656)
+
+
+Started POST "/users/password/new" for 127.0.0.1 at 2020-04-02 08:28:06 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/password/new"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:28:08 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.6ms | Allocations: 219)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3742)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 7332)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:28:12 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 514)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 5254)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 10580)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:28:13 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5912)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:29:30 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 603)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 10678)
+
+
+Started POST "/users/password/new" for 127.0.0.1 at 2020-04-02 08:29:33 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/password/new"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/password/new" for 127.0.0.1 at 2020-04-02 08:29:46 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/password/new"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:29:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 544)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 10603)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:29:54 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 162)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3685)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7253)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:29:55 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 130)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5777)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:08 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 632)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 10679)
+
+
+Started POST "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:30:10 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:30:21 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:24 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 2.1ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 10658)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:30:25 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9471)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:27 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"HPzoHhc9aLYy+DIHHi0JVSC8AEqIXb0Tv6VG7rIbjkc/uQC2166s5vUyFrHkfp7N2ZNt9LQSr/d3CWNgnMntLQ=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"HPzoHhc9aLYy+DIHHi0JVSC8AEqIXb0Tv6VG7rIbjkc/uQC2166s5vUyFrHkfp7N2ZNt9LQSr/d3CWNgnMntLQ=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3713)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7133)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:30:29 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 933)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5413)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:43 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 5315)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 10646)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:44 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"mLcDFnc+Z1xZW2m8exSyrXpXTAbwxBnYo32VEZjQU1678uu+t62jDJ6RTQqBRyU1g3ghuMyLCzxr0bCftgIwNA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:50 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"mLcDFnc+Z1xZW2m8exSyrXpXTAbwxBnYo32VEZjQU1678uu+t62jDJ6RTQqBRyU1g3ghuMyLCzxr0bCftgIwNA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 200 OK in 156ms (ActiveRecord: 2.7ms | Allocations: 7196)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:30:50 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 9302)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-02 08:30:53 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sTyPh+qkDLoRNqb6bTdOobePpg8l/HsrWv0nDIfCJc7YBn19ev7a7QioAW1GuJsEekyv2vlllnx+f+pVVlgC5A=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms | Allocations: 2730)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:30:53 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 290)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:30:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7319)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:30:56 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 190)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1367)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 5878)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:31:27 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 1.7ms | Allocations: 570)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2033)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 7270)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:31:29 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"6bx77J+TFMQJbQS5nvEp7BldXEc3C1kk3vzizf87kkPQtGoHZX/fHoapUKn2l9g5/TayvhXj2hdKB24ymALt4w=="}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 430)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"6bx77J+TFMQJbQS5nvEp7BldXEc3C1kk3vzizf87kkPQtGoHZX/fHoapUKn2l9g5/TayvhXj2hdKB24ymALt4w=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:31:31 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/shared/_links.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 896)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4362)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:31:55 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 1.5ms | Allocations: 570)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 7254)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:31:57 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Y1YLdzr7SXz0uc1tXD00HzRtWelOYPzqeM0GD0PBaTVaXhqcwBeCpnt9mX00W8XK0Aa3EGyIf9nsNorwJPgWlQ=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Y1YLdzr7SXz0uc1tXD00HzRtWelOYPzqeM0GD0PBaTVaXhqcwBeCpnt9mX00W8XK0Aa3EGyIf9nsNorwJPgWlQ=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:07 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 5312)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 10632)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:32:12 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 9465)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:14 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Y5naXqb4hPjOXUZBTVKbmadSvKDBk8cucLsRlOsFsgNakcu1XBRPIkGZElElNGpMQzlSWeN7RB3kQJ1rjDzNow=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Y5naXqb4hPjOXUZBTVKbmadSvKDBk8cucLsRlOsFsgNakcu1XBRPIkGZElElNGpMQzlSWeN7RB3kQJ1rjDzNow=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3713)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 7133)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:32:16 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 189)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 5607)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:17 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZoekKiILKAl5bEFs4yrRpEHigesCgR/eoAb9dwiarihfj7XB2Ofj0/aoFXyLTCBxpYlvEiBpnO00/XGIb6PRiA=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"ZoekKiILKAl5bEFs4yrRpEHigesCgR/eoAb9dwiarihfj7XB2Ofj0/aoFXyLTCBxpYlvEiBpnO00/XGIb6PRiA=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3713)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7134)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:19 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"QZ60fZJebRt9prGlvetsq6yEtCuGaocMkkPL5pKkW094lqWWaLKmwfJi5bXVjZ1+SO9a0qSCBD8GuEcZ9Z0k7w==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-02 08:32:20 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3600)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 7111)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:22 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7290)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:32:31 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5313)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 10639)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:33:27 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 190)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5986)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:34:03 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 570)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2032)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7232)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:35:06 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"2xSIUCJRXMEPSQAu7OUWFTHz7H67+fmJTlHh1o/pqHPiHJm72L2XG4CNVD6Eg+fA1ZgCh5kRerraqm0p6NDX0w=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"2xSIUCJRXMEPSQAu7OUWFTHz7H67+fmJTlHh1o/pqHPiHJm72L2XG4CNVD6Eg+fA1ZgCh5kRerraqm0p6NDX0w=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 204)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4840)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 10.2ms | ActiveRecord: 4.1ms | Allocations: 32080)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:39:40 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 585)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 5412)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 12.7ms | ActiveRecord: 3.5ms | Allocations: 33646)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:39:42 -0500
+Processing by Users::PasswordsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 464)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:39:42 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:39:42 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3715)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7328)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:39:44 -0500
+Processing by Users::PasswordsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:39:44 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:39:44 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7311)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:39:55 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 204)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 11.2ms | ActiveRecord: 4.7ms | Allocations: 30493)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:39:58 -0500
+Processing by Users::PasswordsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 490)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:39:58 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:39:58 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 191)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 7314)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:40:09 -0500
+Processing by Users::PasswordsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 412)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 08:40:09 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:40:09 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 7321)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:41:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 592)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5419)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 11.7ms | ActiveRecord: 3.4ms | Allocations: 33686)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:41:55 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 2.0ms | Allocations: 1466)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 9.3ms | Allocations: 1763)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 4621)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Forgot your password?</h2>
+    4: 
+    5: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    6:   <%= render "devise/shared/error_messages", resource: resource %>
+    7: 
+    8:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:5
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:42:21 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 10677)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:42:24 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.1ms | Allocations: 1341)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 2.2ms | Allocations: 1636)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4415)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:44:57 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 10692)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:44:58 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 1936)
+  Rendered users/passwords/_new.html.erb (Duration: 3.1ms | Allocations: 2471)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 3.9ms | Allocations: 2763)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5528)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:45:13 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5324)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 10684)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:45:15 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 10.5ms | Allocations: 4675)
+  Rendered users/passwords/_new.html.erb (Duration: 11.8ms | Allocations: 5201)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 13.0ms | Allocations: 5493)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 8258)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for #<Class:0x00007f57d86f1508>):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:47:20 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 10682)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:47:23 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 1308)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.5ms | Allocations: 1601)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4364)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Forgot your password?</h2>
+
+<%= form_with model: User, url: password_path(@user)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Send me reset password instructions" %>
+  </div>
+<% end %>
+
+
+<%= render "users/shared/links" %>
+
+):
+1:    <h2>Forgot your password?</h2>
+2:    
+3:    <%= form_with model: User, url: password_path(@user)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:      <div class="field">
+7:        <%= f.label :email %><br />
+8:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+9:      </div>
+10:    
+11:      <div class="actions">
+12:        <%= f.submit "Send me reset password instructions" %>
+13:      </div>
+14:    <% end %>
+15:    
+16:    
+17:    <%= render "users/shared/links" %>
+  
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/_new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/passwords/_new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:47:49 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 10680)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:47:52 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 3.2ms | Allocations: 1286)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 6.1ms | Allocations: 1579)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 4338)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: password_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:48:17 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 10674)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:48:18 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.5ms | Allocations: 438)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3213)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:49:39 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7320)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:52:15 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 592)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 5418)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 14.6ms | ActiveRecord: 3.7ms | Allocations: 33703)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:52:17 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 2.4ms | Allocations: 2353)
+  Rendered users/hcw_index.js.erb (Duration: 7.8ms | Allocations: 2651)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 5498)
+
+
+  
+ActionView::Template::Error (undefined method `length' for nil:NilClass):
+    1: <% if @users.length == 0%>
+    2:   No Results.
+    3: <% end %>
+    4: <div class="results">
+  
+app/views/users/_hcw_results.html.erb:1
+app/views/users/hcw_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:53:26 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 7.6ms | ActiveRecord: 3.8ms | Allocations: 30507)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:53:28 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.4ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.5ms | Allocations: 441)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1433)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:54:17 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5326)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 10674)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:54:19 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.0ms | Allocations: 438)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3211)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:54:19 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 0.5ms | Allocations: 142)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:55:33 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 2.1ms | Allocations: 441)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3205)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:55:43 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 2.0ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 19.8ms | Allocations: 5321)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 10654)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:55:45 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.4ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 2.7ms | Allocations: 440)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3188)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:55:56 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 5325)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms | Allocations: 10669)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:55:58 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 0.9ms | Allocations: 442)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:56:21 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.8ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 10685)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:56:23 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.7ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 3.4ms | Allocations: 442)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3199)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:56:37 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 592)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 5420)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 13.5ms | ActiveRecord: 3.6ms | Allocations: 33697)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:56:41 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.3ms | Allocations: 441)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3303)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:56:51 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 5323)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 10679)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:56:53 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 76)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 4.7ms | Allocations: 439)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 3201)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:57:13 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 5319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 10656)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:57:15 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.7ms | Allocations: 1281)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.4ms | Allocations: 1574)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4281)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_with(model: User, url: password_path(@user)) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:57:15 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.6ms | Allocations: 1083)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 0.8ms | Allocations: 1150)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1715)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_with(model: User, url: password_path(@user)) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:57:59 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 10656)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:58:00 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.3ms | Allocations: 1321)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 2.2ms | Allocations: 1615)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4359)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:58:01 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.7ms | Allocations: 1131)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 0.9ms | Allocations: 1198)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:58:02 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.7ms | Allocations: 1131)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 0.9ms | Allocations: 1202)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1949)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:58:02 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.3ms | Allocations: 1131)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.8ms | Allocations: 1365)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: 
+    4: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    5:   <%= render "devise/shared/error_messages", resource: resource %>
+    6: 
+    7:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 08:58:36 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 10668)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 08:58:37 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.3ms | Allocations: 1291)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 2.4ms | Allocations: 1587)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4330)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: password_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:03:01 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 10666)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:03:03 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 2.1ms | Allocations: 1932)
+  Rendered users/passwords/_new.html.erb (Duration: 3.5ms | Allocations: 2469)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 4.3ms | Allocations: 2762)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5528)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/users/passwords/_new.html.erb:4
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:04:07 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.9ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 10690)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:04:09 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 1289)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.5ms | Allocations: 1583)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4341)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:04:41 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 10682)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:04:43 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.1ms | Allocations: 1274)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.9ms | Allocations: 1568)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4326)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4: 
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:06:52 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 2.3ms | Allocations: 587)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 5329)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 10689)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:06:53 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 1290)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.4ms | Allocations: 1586)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4335)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:07:10 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 10683)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:07:12 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 1.0ms | Allocations: 1289)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.8ms | Allocations: 1583)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4331)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:07:33 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.8ms | Allocations: 580)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 10672)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:07:43 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 1289)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.4ms | Allocations: 1583)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4339)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:08:12 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 7.8ms | ActiveRecord: 6.3ms | Allocations: 30635)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:08:14 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.7ms | Allocations: 1042)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.0ms | Allocations: 1109)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1951)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:09:43 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 8.3ms | ActiveRecord: 3.7ms | Allocations: 30494)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:09:46 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.8ms | Allocations: 1042)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.1ms | Allocations: 1109)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1946)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:14:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:12:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:10:05 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 15.2ms | ActiveRecord: 3.7ms | Allocations: 30489)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:10:07 -0500
+Processing by Users::PasswordsController#new as JS
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 716)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: password):
+  
+app/controllers/users/passwords_controller.rb:46:in `password_params'
+app/controllers/users/passwords_controller.rb:11:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:10:42 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 8.7ms | ActiveRecord: 3.6ms | Allocations: 30501)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:10:45 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering users/passwords/new_password_index.js.erb
+  Rendered users/passwords/_new.html.erb (Duration: 0.9ms | Allocations: 1042)
+  Rendered users/passwords/new_password_index.js.erb (Duration: 1.4ms | Allocations: 1109)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1942)
+
+
+  
+ActionView::Template::Error (Could not find a valid mapping for nil):
+    1: <h2>Forgot your password?</h2>
+    2: 
+    3: <%= form_with(model: User, url: registration_path(@user)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+  
+app/views/users/passwords/_new.html.erb:3
+app/views/users/passwords/new_password_index.js.erb:2
+app/controllers/users/passwords_controller.rb:12:in `block (2 levels) in new'
+app/controllers/users/passwords_controller.rb:10:in `new'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:13:05 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 592)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5418)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 12.6ms | ActiveRecord: 3.6ms | Allocations: 33689)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:13:07 -0500
+Processing by Users::PasswordsController#new as JS
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 189)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 520)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7313)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:13:20 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 5312)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 10635)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:13:22 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 189)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 509)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 6890)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2020-04-02 09:13:23 -0500
+Processing by Users::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"uC/oC6uMRPRxYbT80pKtIWwoZyxCw8DR7zMaak62VOSBJ/ngUWCPLv6l4Oy69Fz0iEOJ1WArQ+J7yJaVKY8rRA==", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 216)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 6837)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:13:58 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 189)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 509)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7631)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2020-04-02 09:14:01 -0500
+Processing by Users::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"tRcg++ueAqOdiY9Dp3mROJq3BVfgZ2t0hIK2D85qEfaMHzEQEXLJeRJN21PPH2DtftzrrsKP6EcQeTrwqVNuVg==", "user"=>{"email"=>"test@test.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "051b1475e4b806efe99d6086823380555b2a4f369eddbb74b535c9d21c22a771"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (3.6ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["reset_password_token", "051b1475e4b806efe99d6086823380555b2a4f369eddbb74b535c9d21c22a771"], ["reset_password_sent_at", "2020-04-02 14:14:02.041769"], ["updated_at", "2020-04-02 14:14:02.042014"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/mailer/reset_password_instructions.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/mailer/reset_password_instructions.html.erb (Duration: 0.9ms | Allocations: 232)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 4.8ms
+Delivered mail 5e85f32a1a7fa_88673f022880@mmoroney-ThinkPad-X1-Carbon-4th.mail (5.0ms)
+Date: Thu, 02 Apr 2020 09:14:02 -0500
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: test@test.com
+Message-ID: <5e85f32a1a7fa_88673f022880@mmoroney-ThinkPad-X1-Carbon-4th.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello test@test.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=FHcNCNwtfasFVJJ5j96c">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 190ms (ActiveRecord: 7.3ms | Allocations: 34913)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:14:02 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.4ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5307)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 9936)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:14:16 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 4216)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:15:12 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 570)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1801)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 7043)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:15:26 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1019)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6247)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:15:47 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 189)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1164)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 6397)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:15:49 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"nV2MFG4ekkg49eUPr7T4s2ES0/iiCI0vdYdIJKVPUWCkVZ3/lPJZkrcxsR/H0glmhXk9AYDgDhzhfMTbwnYuwA=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"nV2MFG4ekkg49eUPr7T4s2ES0/iiCI0vdYdIJKVPUWCkVZ3/lPJZkrcxsR/H0glmhXk9AYDgDhzhfMTbwnYuwA=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 5310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 9747)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-04-02 09:15:50 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 563)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 4041)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-02 09:15:53 -0500
+Processing by Users::RegistrationsController#create as JS
+  Parameters: {"authenticity_token"=>"42yDe3irJSHeVxy+lTizRcnYPXKME3dt1ZkEw3b4jlXaZJKQgkfu+1GTSK79XkKQLbPTi6779F5BYog8EcHx9Q==", "user"=>{"email"=>"test@test.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 19ms (ActiveRecord: 1.2ms | Allocations: 5557)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-02 09:15:53 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.3ms | Allocations: 1769)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-02 09:15:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3712)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 7329)
+
+

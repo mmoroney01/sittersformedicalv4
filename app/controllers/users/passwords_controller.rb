@@ -6,6 +6,13 @@ class Users::PasswordsController < Devise::PasswordsController
   #   super
   # end
 
+  # def new
+  #   respond_to do |f|
+  #     f.html { redirect_to '/' }
+  #     f.js { render 'new_password_index.js.erb' }
+  #   end
+  # end
+
   # POST /resource/password
   # def create
   #   super
