@@ -88,28 +88,33 @@
   padding:1%;
 }
 
-.search_div {
+#hero_search_div, #volunteer_search_div {
   padding-left: 25%;
 }
 
+.yellow_rectangle {
+  float:left;
+  width:10%;
+  height:100%;
+  background:#fbed08;
+  margin-right:2%;
+}
 .results {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    flex-basis: 0 0 32.17%;
+    flex-basis: 0 0 21%;
   }  
 
   .one_result {
+    float:left;
     padding-left:20px;
     padding-top:15px;
     padding-bottom:15px;
     margin: 0 auto;
     list-style: none;
-    flex-basis:0 0 32.17%;
-    width:32.17%;
-    border-style:solid;
-    border-color:black;
-    border-width:thin;
+    flex-basis:0 0 21%;
+    width:21%;
   }  
 
  .app_title {

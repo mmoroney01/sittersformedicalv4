@@ -4,6 +4,7 @@
 <div class="results">
   <% @users.each do |user| %>
     <div class="one_result">
+    <div class="yellow_rectangle"></div>
     <% if user.zip_code %>
       Zip Code: <%= user.zip_code %><br>
     <% end %>
