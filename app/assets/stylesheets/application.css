@@ -14,76 +14,58 @@
  *= require_self
  */
 
- body {
-  background-color: #b2d7eb;
- }
-
-.login_title_rosie{
+.blurb_rosie_login{
   display: flex; /* equal height of the children */
+}
+
+.blurb {
+  float: left;
+  padding:1%;
+  width:28%;
+  overflow: hidden;
+}
+
+.rosie {
+  padding:1%;
+  float: left;
+  width:49%;
 }
 
 .login_div {
   padding:1%;
+  width:20%;
   float: left;
-  width: 30%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-
 }
 
 .login_inner {
   padding: 1%;
-  width: 41%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-
-}
-
-.title_rosie {
-  float: left;
-  width:38%;
-  padding:1%;
-  overflow: hidden;
-  text-align:center;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
 }
 
 .disclaimer_div{
-  float:left;
   padding:1%;
-  width:30%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
 }
 
+.volunteer_banner, .hero_banner {
+  background-color:#fbed08;
+  text-align:center;
+}
+
+.volunteer_leftover, .hero_leftover {
+  padding-left:33%;
+  background-color: #fffac2;
+}
 
 .container {
     display:flex;
 }  
 
-.hero_div_register{
+.hero_div_register, .volunteer_div_register{
   float:left;
   width:32%;
   padding:1%;
   border-color:black;
   border-style:solid;
   border-width: thin;
-  text-align:center;
-}
-
-.volunteer_div_register{
-  float:left;
-  width:32%;
-  padding:1%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-  text-align:center;    
 }
 
 .everyone_div_register{
@@ -97,27 +79,17 @@
 }
 
 .hero_volunteer_div {
-  display:flex;
+  display:flex;  
 }
 
-.hero_div {
+.hero_div, .volunteer_div {
   float:left;
   width:48%;
   padding:1%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-  text-align:center;
 }
 
-.volunteer_div{
-  float:left;
-  width:48%;
-  padding:1%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-  text-align:center;
+.search_div {
+  padding-left: 25%;
 }
 
 .results {
