@@ -53,6 +53,7 @@
 .volunteer_leftover, .hero_leftover {
   padding-left:33%;
   background-color: #fffac2;
+  display:none;
 }
 
 .container {

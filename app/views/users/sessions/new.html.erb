@@ -1,23 +1,24 @@
 <script>
   $(document).ready(function()
 {
-  $('#hero').prop('checked', false);
-  $('#volunteer').prop('checked', false);
-  $("#volunteer_search_div").hide();
-  $("#hero_search_div").hide();
+  $(".volunteer_leftover").hide();
+  $(".hero_leftover").hide();
+  var checkboxes = $( ':checkbox' );
+  checkboxes.prop( 'checked', false );
 
   $('#hero').change(function()
   {
     if(this.checked == true)
     {
-       $(".hero_leftover").css("background-color", "gray");
-       $(".volunteer_leftover").css("background-color", "#fffac2");
+       $("#search-results-append").empty();
        $("#volunteer").prop('checked', false);
-       $("#volunteer_search_div").hide();
+       $(".hero_leftover").hide();
+       $(".volunteer_leftover").show();
        $("#hero_search_div").show();
+       $("#volunteer_search_div").hide();
     } else if (this.checked != true) {
-       $("#hero_search_div").hide();
-       $(".hero_leftover").css("background-color", "#fffac2");
+       $("#search-results-append").empty();
+       $(".volunteer_leftover").hide();
     }
   });
 
@@ -25,14 +26,15 @@
   {
     if(this.checked == true)
     {
-       $(".volunteer_leftover").css("background-color", "gray");
-       $(".hero_leftover").css("background-color", "#fffac2");
+       $("#search-results-append").empty();
        $("#hero").prop('checked', false);
-       $("#hero_search_div").hide();
+       $(".volunteer_leftover").hide();
+       $(".hero_leftover").show();
        $("#volunteer_search_div").show();
+       $("#hero_search_div").hide();
     } else if (this.checked != true) {
-      $("#volunteer_search_div").hide();
-       $(".volunteer_leftover").css("background-color", "#fffac2");
+       $("#search-results-append").empty();
+       $(".hero_leftover").hide();
     }
   });   
 });
@@ -84,7 +86,7 @@
       <div class="actions">
         <%= f.submit "Log in" %>
       </div>
-    <% end %>    
+    <% end %>
 
     <%= render "users/shared/links" %>
     </div>

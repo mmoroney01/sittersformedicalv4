@@ -1,67 +1,148 @@
-<div class="index_search_top_bar">
+<script>
+  $(document).ready(function()
+{
+  $(".volunteer_leftover").hide();
+  $(".hero_leftover").hide();
+  var checkboxes = $( ':checkbox' );
+  checkboxes.prop( 'checked', false );
+
+  $('#hero').change(function()
+  {
+    if(this.checked == true)
+    {
+       $("#search-results-append").empty();
+       $("#volunteer").prop('checked', false);
+       $(".hero_leftover").hide();
+       $(".volunteer_leftover").show();
+       $("#hero_search_div").show();
+       $("#volunteer_search_div").hide();
+    } else if (this.checked != true) {
+       $("#search-results-append").empty();
+       $(".volunteer_leftover").hide();
+    }
+  });
+
+  $('#volunteer').change(function() 
+  {
+    if(this.checked == true)
+    {
+       $("#search-results-append").empty();
+       $("#hero").prop('checked', false);
+       $(".volunteer_leftover").hide();
+       $(".hero_leftover").show();
+       $("#volunteer_search_div").show();
+       $("#hero_search_div").hide();
+    } else if (this.checked != true) {
+       $("#search-results-append").empty();
+       $(".hero_leftover").hide();
+    }
+  });   
+});
+</script>
+
+<div class="blurb_rosie_login">
+  <div class="blurb">
+    <h2>COVID-19 Volunteers For Victory</h1>
+    <br>
+
+    Hi, I'm Jordan Colgan and I came up with this website so we can match volunteers willing to help the healthcare heroes and essential worker warriors who are working around the clock to fight and win the war against COVID-19. THANK YOU.
+
+    <br><br>
+
+    As a high school junior in Cook County, IL, I have friends whose parents are balancing increased work hours with kids who are suddenly at home and they need assistance.
+    
+    <br><br>
+  </div>
+  
+  <div class="rosie">
+    <img src="https://images.fastcompany.net/image/upload/w_800,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/06/p-2-90176641-what-the-iconic-rosie-the-riveter-poster-tktktk-1.jpg">
+  </div>
+
   <% if user_signed_in? %>
-    <%= button_to "Sign out", destroy_user_session_path, :method => :delete %>
+   <%= button_to "Sign out", destroy_user_session_path, :method => :delete %>
   <% end %>
 
-  <h1 style="text-align:center;">Please select only ONE of the following: "I need a Volunteer!" OR "I am Willing to Volunteer"</h3>
+</div>
+
+  <div class="disclaimer_div">
+    DISCLAIMER: This site is for the purpose of helping working parents locate members of the community who are willing to assist. We do not run individual background checks on the individuals who have reached out, and rely on the goodwill of participants to make this exercise successful. We are asking participants who are over 18 to provide references, and we urge those seeking services to do your own due diligence before making any hiring decisions.    
+
+    Please remember that this program is designed to help students and families through this challenging time in which school has transitioned to an online learning system. Your family and education needs will still be in the forefront. Our priority remains the health and safety of everyone involved and in order to keep everyone as safe as possible we ask that if you or anyone has come in close contact with you does not feel well that you stay at home and contact us to provide accomodation for your family. This program is completely voluntary and if you feel uncomfortable at any time you may cease participation. In participating in this program you enter your partner's home and you are taking responsibility for your own health and safety. All of your information will be protected and will only be shared with the family in which you become paired with. Typing your name below serves as your electronic signature acknowledging all the statements above. *
   </div>
 
-  <div class="hero_volunteer_div">
+<div class="hero_volunteer_div">
     <div class="hero_div">
-    <%= form_with model: User, url: '/users/volunteer_index', method: :get, remote: true do |f| %>
-      <br>
-      I need a Volunteer!<%= f.check_box :hero, placeholder: "hero" %><br><br>
-      Zip Code
-      <%= f.text_field :zip_code, placeholder: "Zip Code XXXXX:" %><br><br>  
+      <div class="volunteer_banner">
+        <%= form_with model: User, url: '/users/volunteer_index', method: :get, remote: true do |f| %>
+         <br>
+        <h1 style="display:inline;">I need a Volunteer!</h1><%= f.check_box :hero, id: "hero",placeholder: "hero" %><br><br>
+      </div>
+      
+      <div class="volunteer_leftover">
+        <br>
+        Zip Code
+        <%= f.text_field :zip_code, placeholder: "Zip Code XXXXX:" %><br><br>    
 
-      Services Needed: Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %>
-      Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %>
-      E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>
-      I Need Someone Available on the Following Days:<br>
-      Sunday<%= f.check_box :sunday, placeholder: "sunday" %>
-      Monday<%= f.check_box :monday, placeholder: "monday" %>
-      Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %>
-      Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %>
-      Thursday<%= f.check_box :thursday, placeholder: "thursday" %>
-      Friday<%= f.check_box :friday, placeholder: "friday" %>
-      Saturday<%= f.check_box :saturday, placeholder: "saturday" %><br><br>
-      I Need Someone Available at the Following Times:<br>
-      Morning<%= f.check_box :morning, placeholder: "morning" %>
-      Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %>
-      Evening<%= f.check_box :evening, placeholder: "evening" %>
-      Night<%= f.check_box :night, placeholder: "night" %><br><br>  
+        Services Needed:<br>Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %><br>
+        Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %><br>
+        E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>
+        I Need Someone Available on the Following Days:<br>
+        Sunday<%= f.check_box :sunday, placeholder: "sunday" %><br>
+        Monday<%= f.check_box :monday, placeholder: "monday" %><br>
+        Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %><br>
+        Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %><br>
+        Thursday<%= f.check_box :thursday, placeholder: "thursday" %><br>
+        Friday<%= f.check_box :friday, placeholder: "friday" %><br>
+        Saturday<%= f.check_box :saturday, placeholder: "saturday" %><br><br>
+        I Need Someone Available at the Following Times:<br>
+        Morning<%= f.check_box :morning, placeholder: "morning" %><br>
+        Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %><br>
+        Evening<%= f.check_box :evening, placeholder: "evening" %><br>
+        Night<%= f.check_box :night, placeholder: "night" %><br><br>    
 
-      I Need Someone With Transportation<%= f.check_box :yes_transit, placeholder: "yes_transit" %>
-      I Don't Need Someone With Transportation<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br>
-      <div class="search_div"><%= f.submit "Search" %></div><br>
-    <% end %>
+        I Need Someone With Transportation<%= f.check_box :yes_transit, placeholder: "yes_transit" %><br><br>
+        I Don't Need Someone With Transportation<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br><br>
+        <div id="hero_search_div"><%= f.submit "Search" %></div><br><br>
+      <% end %>
+    </div>
+  
   </div>
+
 
     <div class="volunteer_div">
-    <%= form_with model: User, url: '/users/hero_index', method: :get, remote: true do |f| %>
+     <div class="hero_banner">
+        <%= form_with model: User, url: '/users/hero_index', method: :get, remote: true do |f| %>
+        <br>
+        <h1 style="display:inline;">I am Willing to Volunteer!</h1><%= f.check_box :volunteer, id: "volunteer", placeholder: "volunteer" %><br><br>
+     </div>
+
+     <div class="hero_leftover">
       <br>
-      I am Willing to Volunteer<%= f.check_box :volunteer, placeholder: "volunteer" %><br><br>
       Zip Code <%= f.text_field :zip_code, placeholder: "Zip Code XXXXX:" %><br><br>
-      Services Provided: Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %>
-      Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %>
+      Services Provided:<br>
+      Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %><br>
+      Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %><br>
       E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>
       I am Available on the Following Days:<br>
-      Sunday<%= f.check_box :sunday, placeholder: "sunday" %>
-      Monday<%= f.check_box :monday, placeholder: "monday" %>
-      Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %>
-      Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %>
-      Thursday<%= f.check_box :thursday, placeholder: "thursday" %>
-      Friday<%= f.check_box :friday, placeholder: "friday" %>
+      Sunday<%= f.check_box :sunday, placeholder: "sunday" %><br>
+      Monday<%= f.check_box :monday, placeholder: "monday" %><br>
+      Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %><br>
+      Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %><br>
+      Thursday<%= f.check_box :thursday, placeholder: "thursday" %><br>
+      Friday<%= f.check_box :friday, placeholder: "friday" %><br>
       Saturday<%= f.check_box :saturday, placeholder: "saturday" %><br><br>
       I am Available at the Following Times:<br>
-      Morning<%= f.check_box :morning, placeholder: "morning" %>
-      Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %>
-      Evening<%= f.check_box :evening, placeholder: "evening" %>
+      Morning<%= f.check_box :morning, placeholder: "morning" %><br>
+      Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %><br>
+      Evening<%= f.check_box :evening, placeholder: "evening" %><br>
       Night<%= f.check_box :night, placeholder: "night" %><br><br>
-      I Have Transportation<%= f.check_box :yes_transit, placeholder: "yes_transit" %>
-      I Don't Have Transportation<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br>
-      <div class="search_div"><%= f.submit "Search" %></div><br>
+      I Have Transportation<%= f.check_box :yes_transit, placeholder: "yes_transit" %><br><br>
+      I Don't Have Transportation<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br><br>
+      <div id="volunteer_search_div"><%= f.submit "Search" %></div><br><br>
     <% end %>
+    </div>
   </div>
+
 </div>
 <div id="search-results-append"></div>
+
