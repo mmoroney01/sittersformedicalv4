@@ -13499,3 +13499,285 @@ Processing by Users::SessionsController#new as HTML
 Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7310)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:38:19 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 6585)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 8804)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "You need to sign in or sign up before continuing.":String):
+    122:             <div class="reg_everyone_leftover">
+    123:               <p id="alert">
+    124:                 <% if flash[:alert]%>
+    125:                   <% flash[:alert].each do |error| %>
+    126:                   <%= error %><br>
+    127:                   <% end %>
+    128:                 <% end %>
+  
+app/views/users/registrations/new.html.erb:125
+app/views/users/registrations/new.html.erb:43
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:38:27 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.4ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5338)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 10136)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:38:29 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5122)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5792)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "You need to sign in or sign up before continuing.":String):
+    122:             <div class="reg_everyone_leftover">
+    123:               <p id="alert">
+    124:                 <% if flash[:alert]%>
+    125:                   <% flash[:alert].each do |error| %>
+    126:                   <%= error %><br>
+    127:                   <% end %>
+    128:                 <% end %>
+  
+app/views/users/registrations/new.html.erb:125
+app/views/users/registrations/new.html.erb:43
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:40:29 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 6619)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 8848)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "You need to sign in or sign up before continuing.":String):
+    122:             <div class="reg_everyone_leftover">
+    123:               <p id="alert">
+    124:                 <% if flash[:alert].length > 1%>
+    125:                   <% flash[:alert].each do |error| %>
+    126:                     <%= error %><br>
+    127:                   <% end %>
+    128:                 <% else %>
+  
+app/views/users/registrations/new.html.erb:125
+app/views/users/registrations/new.html.erb:43
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:41:15 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 5090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 10360)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:41:29 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"u1VqcdjoGZ1W2yYysfqoseYnQZ9fzHoD74F8GdyhXTja2iarucDN3z8OoqoD1iPmmRkhIb4SBj457feC98cUKA=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"u1VqcdjoGZ1W2yYysfqoseYnQZ9fzHoD74F8GdyhXTja2iarucDN3z8OoqoD1iPmmRkhIb4SBj457feC98cUKA=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 10489)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:41:31 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5769)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 7419)
+
+
+  
+ActionView::Template::Error (undefined method `length' for nil:NilClass):
+    121:             </div>
+    122:             <div class="reg_everyone_leftover">
+    123:               <p id="alert">
+    124:                 <% if flash[:alert].length > 1 %>
+    125:                     <%= flash[:alert] %><br>
+    126:                 <% else %>
+    127:                    <%= flash[:alert] %>
+  
+app/views/users/registrations/new.html.erb:124
+app/views/users/registrations/new.html.erb:43
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:41:51 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 10340)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-06 10:41:53 -0500
+Processing by Users::RegistrationsController#create as JS
+  Parameters: {"authenticity_token"=>"Yy2y+bBdR7YUHQQ+1dSIUixFjpE44gyO/WsD6VrLr2UCov4j0XWT9H3IgKZn+AMFU3vuL9k8cLMrB4hyca3mdQ==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"", "location"=>"", "cell_number"=>"", "county"=>"Cook"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000/users/sign_up
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 4597)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:41:53 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 7168)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 5115)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 10339)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-06 10:42:32 -0500
+Processing by Users::RegistrationsController#create as JS
+  Parameters: {"authenticity_token"=>"fxB2nLTc5yaS1evhS8qbp1nUrV3/dP9iaKMjdzseTRwenzpG1fQzZPsAb3n55hDwJurN4x6qg1++z6jsEHgEDA==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"", "location"=>"", "cell_number"=>"", "county"=>"Cook"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000/users/sign_up
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms | Allocations: 4595)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:32 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 7176)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:42:35 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"UiRUqn5rGv3u4g9j2qXNrpdWTExq/UJ/uWZuFdrE9dudw44LAHXKBa5FhkPm/s6RMCKN/wVD6GhxxGPGTotvIg=="}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 426)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"UiRUqn5rGv3u4g9j2qXNrpdWTExq/UJ/uWZuFdrE9dudw44LAHXKBa5FhkPm/s6RMCKN/wVD6GhxxGPGTotvIg=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 5.6ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 9794)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:36 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7142)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-06 10:42:38 -0500
+Processing by Users::RegistrationsController#create as JS
+  Parameters: {"authenticity_token"=>"FkMrPRcB/V1mgUzYscyISDbBQmuQ+aL5HiRV5sUlcW53zGfndikpHw9UyEAD4AMfSf8i1XEn3sTISN597kM4fg==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"", "location"=>"", "cell_number"=>"", "county"=>"Cook"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000/users/sign_up
+Completed 200 OK in 12ms (ActiveRecord: 0.0ms | Allocations: 4594)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:38 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7157)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:43 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 189)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 5120)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 10367)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-04-06 10:42:45 -0500
+Processing by Users::RegistrationsController#create as JS
+  Parameters: {"authenticity_token"=>"VUbQY6Yzm4u38Yuz1L082D2nCcysQYXYj1oB+fTmS6o0yZy5xxtPyd4kDytmkbePQplpck2f+eVZNopi34ACug==", "user"=>{"hero"=>"0", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "c_morning"=>"0", "c_afternoon"=>"0", "c_evening"=>"0", "c_night"=>"0", "services_needed_or_provided"=>"", "volunteer"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "age_16"=>"0", "age_17"=>"0", "age_18_up"=>"0", "yes_transit"=>"0", "no_transit"=>"0", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "zip_code"=>"", "location"=>"", "cell_number"=>"", "county"=>"Cook"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000/users/sign_up
+Completed 200 OK in 27ms (ActiveRecord: 0.0ms | Allocations: 4587)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-06 10:42:45 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7178)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:42:48 -0500
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"kb3kP3KVw/s33fw7AnyXgsAb9t8cgHdChT/zKaJUuLFeWj6eDIsTA3d6dRs+J5S9Z283bHM+3VVNnf76NhsiSA=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 416)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"kb3kP3KVw/s33fw7AnyXgsAb9t8cgHdChT/zKaJUuLFeWj6eDIsTA3d6dRs+J5S9Z283bHM+3VVNnf76NhsiSA=="}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.9ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 9788)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:42:52 -0500
+Processing by Users::SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"iwnstoy0hKk2ckUYLvs4dMRNs9c+BoYtC2z8KW7tZ8rqhqBs7ZxQ61+nwYCc17Mju3PTad/Y+hDdAHeyRYsu2g==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 200 OK in 139ms (ActiveRecord: 0.6ms | Allocations: 4129)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-06 10:42:52 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 9301)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-06 10:42:55 -0500
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zJE3GCGCBLvn/1OhEjLD55qlJnzhDWIUDUggacQjJiQhR4hVSp/jJLJ0W2xp9QhhBGCcMxS1Adzq5GqhRqK75g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 2249)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-06 10:42:55 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 290)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-06 10:42:55 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 192)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3717)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 7328)
+
+

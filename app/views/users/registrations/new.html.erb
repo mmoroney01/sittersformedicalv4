@@ -121,10 +121,12 @@
             </div>
             <div class="reg_everyone_leftover">
               <p id="alert">
-                <% if flash[:alert]%>
-                  <% flash[:alert].each do |error| %>
-                  <%= error %><br>
-                  <% end %>
+                <% if flash[:alert] && flash[:alert].length > 1 %>
+                    <% flash[:alert].each do |error| %>
+                      <%= error %><br>
+                    <% end %>
+                <% else %>
+                   <%= flash[:alert] %>
                 <% end %>
               </p>
               <%= f.email_field :email, placeholder: "Email:", autofocus: true, autocomplete: "email" %><br>     
