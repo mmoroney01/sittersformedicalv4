@@ -63,7 +63,7 @@
     <br>
     <h2>Log in</h2>
       
-    <%= form_with(model: User, url: session_path(@user)) do |f| %>
+    <%= form_with(model: User, url: session_path(@user), remote: true) do |f| %>
       <div class="field">
         <%= f.label :email %><br>
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -90,6 +90,8 @@
 
     <%= render "users/shared/links" %>
     </div>
+
+    <div id="login_error"></div>
   </div>
 </div>
 

@@ -121,7 +121,7 @@
             </div>
             <div class="reg_everyone_leftover">
               <p id="alert">
-                <% if flash[:alert] && flash[:alert].length > 1 %>
+                <% if flash[:alert] && flash[:alert] != "You need to sign in or sign up before continuing." && flash[:alert].length > 1 %>
                     <% flash[:alert].each do |error| %>
                       <%= error %><br>
                     <% end %>
