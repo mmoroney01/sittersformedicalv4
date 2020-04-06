@@ -10,10 +10,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   def create
-    p Rails.configuration.database_configuration['development']['database']
     @user = User.create(user_params)
-    sign_in @user
-    redirect_to '/'
+    if @user.valid?
+      sign_in @user
+      redirect_to '/'
+    else
+      flash[:alert] = @user.errors.full_messages
+      redirect_to '/users/sign_up'
+    end
   end
 
   private

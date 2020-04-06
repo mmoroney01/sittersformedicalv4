@@ -45,38 +45,65 @@
   padding:1%;
 }
 
-.volunteer_banner, .hero_banner {
+
+
+.volunteer_banner, .hero_banner, .reg_everyone_banner, .reg_volunteer_banner, .reg_hero_banner {
   background-color:#fbed08;
   text-align:center;
 }
 
 .volunteer_leftover, .hero_leftover {
-  padding-left:33%;
+  padding-left:31%;
   background-color: #fffac2;
   display:none;
+}
+
+
+.reg_volunteer_leftover {
+  background-color: #fffac2;
+  display:none;
+  display:flex;
+}
+
+.volunteer_availability {
+  float:left;
+  width:52%;
+  padding:3%;
+}
+
+.volunteer_etcetera {
+  float:left;
+  width:43%;
+  padding:3%;
+}
+
+.reg_hero_leftover {
+  display:none;
+  padding:3% 0% 3% 32%;
+  background-color: #fffac2;
+ 
+}
+
+.reg_everyone_leftover {
+  background-color: #fffac2;
+  text-align:center;
+  padding:5%;
 }
 
 .container {
     display:flex;
 }  
 
-.hero_div_register, .volunteer_div_register{
+.hero_div_register, .everyone_div_register {
   float:left;
-  width:32%;
+  width:30%;
   padding:1%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
 }
 
-.everyone_div_register{
+.volunteer_div_register {
   float:left;
-  width:32%;
-  padding:1%;
-  border-color:black;
-  border-style:solid;
-  border-width: thin;
-  text-align:center;  
+  width:38%;
+  padding:1%; 
 }
 
 .hero_volunteer_div {
@@ -88,6 +115,9 @@
   width:48%;
   padding:1%;
 }
+
+
+
 
 #hero_search_div, #volunteer_search_div {
   padding-left: 25%;
@@ -134,14 +164,7 @@
    margin-left: 2%;
 }
 
-  #search-results-append {  
-  
-  }  
-
   .register_page {
-    border-color:black;
-    border-style:solid;
-    border-width: thin;
   }
 
 .index_search_top_bar {

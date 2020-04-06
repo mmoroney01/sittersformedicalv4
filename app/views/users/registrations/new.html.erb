@@ -1,76 +1,132 @@
+<script>
+  $(document).ready(function()
+{
+  $(".reg_hero_leftover").hide();
+  $(".reg_volunteer_leftover").hide();
+  
+  var checkboxes = $( ':checkbox' );
+  checkboxes.prop( 'checked', false );
+
+  $('#hero').change(function()
+  {
+    if(this.checked == true)
+    {
+      console.log("AAAA");
+       $("#volunteer").prop('checked', false);
+       $(".reg_hero_leftover").show();
+       $(".reg_volunteer_leftover").hide();
+    } else if (this.checked != true) {
+       $(".reg_hero_leftover").hide();
+    }
+  });
+
+  $('#volunteer').change(function() 
+  {
+    if(this.checked == true)
+    {
+       $("#hero").prop('checked', false);
+       $(".reg_hero_leftover").hide();
+       $(".reg_volunteer_leftover").show();
+    } else if (this.checked != true) {
+       $(".reg_volunteer_leftover").hide();
+    }
+  });   
+});
+</script>
+
+
 <%= button_to "Back", new_session_path(resource_name) %><br>
 
 <h1>Register</h1>
 
 <div class="register_page">
-  
   <%= form_with(model: User, url: registration_path(@user)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
+
       <div class="container">
-
         <div class="hero_div_register">
-          <h2>Healthcare Heroes</h2>
-          I am a Health Care Hero<%= f.check_box :hero, placeholder: "hero" %><br><br>      
+            <div class="reg_hero_banner">
+              <br><h2 style="display:inline;">Healthcare Heroes</h2><%= f.check_box :hero, id: "hero",placeholder: "hero" %><br><br>
+            </div>
+            <div class="reg_hero_leftover">
+              Services Wanted:<br>
+              Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %><br>
+              Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %><br>
+              E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>
+              
+              Best Time to Contact:<br>
+              Morning<%= f.check_box :c_morning, placeholder: "morning" %><br>
+              Afternoon<%= f.check_box :c_afternoon, placeholder: "afternoon" %><br>
+              Evening<%= f.check_box :c_evening, placeholder: "evening" %><br>
+              Night<%= f.check_box :c_night, placeholder: "night" %><br><br>        
 
-          Services Wanted:<br>
-          Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %>
-          Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %>
-          E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>
-          
-          Best Time to Contact:<br>
-          Morning<%= f.check_box :c_morning, placeholder: "morning" %>
-          Afternoon<%= f.check_box :c_afternoon, placeholder: "afternoon" %>
-          Evening<%= f.check_box :c_evening, placeholder: "evening" %>
-          Night<%= f.check_box :c_night, placeholder: "night" %><br><br>    
-
-          Services Wanted<br>
-          <%= f.text_area :services_needed_or_provided, size:"40x7", placeholder: "We Can Do It!", :maxlength => 250 %>    
-        </div>  
+              Description of Services Wanted:<br>
+              <%= f.text_area :services_needed_or_provided, size:"40x7", placeholder: "We Can Do It!", :maxlength => 250 %>
+            </div>
+          </div>  
 
         <div class="volunteer_div_register">
-          <h2>Volunteers for Victory</h2>      
-
-          I am a Volunteer for Victory<%= f.check_box :volunteer, placeholder: "volunteer" %><br><br>     
-
-          Available on the following days:<br>
-          Sunday<%= f.check_box :sunday, placeholder: "sunday" %>
-          Monday<%= f.check_box :monday, placeholder: "monday" %>
-          Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %>
-          Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %>
-          Thursday<%= f.check_box :thursday, placeholder: "thursday" %>
-          Friday<%= f.check_box :friday, placeholder: "friday" %>
-          Saturday<%= f.check_box :saturday, placeholder: "saturday" %><br><br>
-          Available during the following times:<br>
-          Morning<%= f.check_box :morning, placeholder: "morning" %>
-          Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %>
-          Evening<%= f.check_box :evening, placeholder: "evening" %>
-          Night<%= f.check_box :night, placeholder: "night" %><br><br>  
-
-          Best Time to Contact:<br>
-          Morning<%= f.check_box :c_morning, placeholder: "morning" %>
-          Afternoon<%= f.check_box :c_afternoon, placeholder: "afternoon" %>
-          Evening<%= f.check_box :c_evening, placeholder: "evening" %>
-          Night<%= f.check_box :c_night, placeholder: "night" %><br><br>  
-
-          Services Provided: <br>
-          Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %>
-          Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %>
-          E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>  
-
-          Age:<br>
-          16<%= f.check_box :age_16, placeholder: "age" %>
-          17<%= f.check_box :age_17, placeholder: "age" %>
-          18+<%= f.check_box :age_18_up, placeholder: "age" %><br><br>  
-
-          Transportation?<br>
-          Yes<%= f.check_box :yes_transit, placeholder: "yes_transit" %>
-          No<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br>  
-
-          Services Provided<br>
-            <%= f.text_area :services_needed_or_provided, size:"40x7", placeholder: "We Can Do It!", :maxlength => 250 %>
+          <div class="reg_volunteer_banner">
+            <br><h2 style="display:inline;">Volunteers for Victory</h2><%= f.check_box :volunteer, id: "volunteer", placeholder: "volunteer" %><br><br>
           </div>
+          <div class="reg_volunteer_leftover">
+           <div class="volunteer_availability">
+            Available on the following days:<br>
+            Sunday<%= f.check_box :sunday, placeholder: "sunday" %><br>
+            Monday<%= f.check_box :monday, placeholder: "monday" %><br>
+            Tuesday<%= f.check_box :tuesday, placeholder: "tuesday" %><br>
+            Wednesday<%= f.check_box :wednesday, placeholder: "wednesday" %><br>
+            Thursday<%= f.check_box :thursday, placeholder: "thursday" %><br>
+            Friday<%= f.check_box :friday, placeholder: "friday" %><br>
+            Saturday<%= f.check_box :saturday, placeholder: "saturday" %><br><br>
+            Available during the following times:<br>
+            Morning<%= f.check_box :morning, placeholder: "morning" %><br>
+            Afternoon<%= f.check_box :afternoon, placeholder: "afternoon" %><br>
+            Evening<%= f.check_box :evening, placeholder: "evening" %><br>
+            Night<%= f.check_box :night, placeholder: "night" %><br><br>    
+
+            Best Time to Contact:<br>
+            Morning<%= f.check_box :c_morning, placeholder: "morning" %><br>
+            Afternoon<%= f.check_box :c_afternoon, placeholder: "afternoon" %><br>
+            Evening<%= f.check_box :c_evening, placeholder: "evening" %><br>
+            Night<%= f.check_box :c_night, placeholder: "night" %><br><br>  
+           </div>
+
+           <div class="volunteer_etcetera">
+            Services Provided: <br>
+            Babysitting<%= f.check_box :babysitting, placeholder: "babysitting" %><br>
+            Grocery Shopping<%= f.check_box :grocery_shopping, placeholder: "grocery_shopping" %><br>
+            E-Learning Assistance<%= f.check_box :e_learning_assistance, placeholder: "e_learning_assistance" %><br><br>    
+
+            Age:<br>
+            16<%= f.check_box :age_16, placeholder: "age" %><br>
+            17<%= f.check_box :age_17, placeholder: "age" %><br>
+            18+<%= f.check_box :age_18_up, placeholder: "age" %><br><br>    
+
+            Transportation?<br>
+            Yes<%= f.check_box :yes_transit, placeholder: "yes_transit" %><br>
+            No<%= f.check_box :no_transit, placeholder: "no_transit" %><br><br><br>   
+
+            Description of Services Provided:<br>
+              <%= f.text_area :services_needed_or_provided, size:"40x7", placeholder: "We Can Do It!", :maxlength => 250 %>
+            </div>
+          </div>
+        </div>
+
           <div class="everyone_div_register">
-            <h2>For Everyone</h2>
+            <div class="reg_everyone_banner">
+              <br>
+              <h2>For Everyone</h2>
+              <br>
+            </div>
+            <div class="reg_everyone_leftover">
+              <p id="alert">
+                <% if flash[:alert]%>
+                  <% flash[:alert].each do |error| %>
+                  <%= error %><br>
+                  <% end %>
+                <% end %>
+              </p>
               <%= f.email_field :email, placeholder: "Email:", autofocus: true, autocomplete: "email" %><br>     
               <%= f.password_field :password, placeholder: "Password:", autocomplete: "new-password" %><br>     
               <%= f.password_field :password_confirmation, placeholder: "Confirm Password:", autocomplete: "new-password" %><br>
@@ -82,10 +138,11 @@
               <br>   
               County: <%= f.select :county, ["Cook", "Lake", "Will", "DuPage", "Kane", "McHenry"] %><br><br>
               <div id="register_button">
-               <%= f.submit "Sign up" %>
+               <%= f.submit "Sign up", id: "sign_up" %>
               </div>
             </div>
-        </div>  
-        </div>
-    <% end %>
+          </div>
+          </div>  
+      <% end %>
+    </div>
 </div>

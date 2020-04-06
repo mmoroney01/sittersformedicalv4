@@ -5,7 +5,7 @@
   <% @users.each do |user| %>
     <div class="one_result">
     <div class="yellow_rectangle"></div>
-    <% if user.zip_code %>
+    <% if user_signed_in? && user.zip_code %>
       Zip Code: <%= user.zip_code %><br>
     <% end %>
     <% if user.gender %>
@@ -59,7 +59,7 @@
     <% if user.county %>
       County: <%= user.county %><br>
     <% end %>
-    <% if user.cell_number %>
+    <% if user_signed_in? && user.cell_number %>
       Phone Number: <%= user.cell_number %><br>
     <% end %>
     <% if user.yes_transit == 1%>
