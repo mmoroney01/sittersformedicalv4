@@ -22610,3 +22610,919 @@ Processing by UsersController#volunteer_index as JS
 Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 1.1ms | Allocations: 96043)
 
 
+Started GET "/" for 127.0.0.1 at 2020-06-25 11:25:06 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 11:25:06 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 2.0ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5332)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 10674)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:25:16 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."sunday" = $2 AND "users"."monday" = $3 AND "users"."wednesday" = $4 AND "users"."thursday" = $5 AND "users"."friday" = $6 AND "users"."saturday" = $7[0m  [["volunteer", 1], ["sunday", 1], ["monday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1]]
+  ↳ app/views/users/_hcw_results.html.erb:1
+  Rendered users/_hcw_results.html.erb (Duration: 3.3ms | Allocations: 2015)
+  Rendered users/hcw_index.js.erb (Duration: 5.1ms | Allocations: 3978)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 6675)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:25:20 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."wednesday" = $6 AND "users"."thursday" = $7 AND "users"."friday" = $8 AND "users"."saturday" = $9[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1]]
+  ↳ app/views/users/_hcw_results.html.erb:1
+  Rendered users/_hcw_results.html.erb (Duration: 7.7ms | Allocations: 931)
+  Rendered users/hcw_index.js.erb (Duration: 10.6ms | Allocations: 1526)
+Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 2.1ms | Allocations: 2806)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:25:26 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"0", "afternoon"=>"1", "evening"=>"1", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."wednesday" = $6 AND "users"."thursday" = $7 AND "users"."friday" = $8 AND "users"."saturday" = $9 AND "users"."afternoon" = $10 AND "users"."evening" = $11[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1], ["afternoon", 1], ["evening", 1]]
+  ↳ app/views/users/_hcw_results.html.erb:1
+  Rendered users/_hcw_results.html.erb (Duration: 11.4ms | Allocations: 949)
+  Rendered users/hcw_index.js.erb (Duration: 14.5ms | Allocations: 1544)
+Completed 200 OK in 21ms (Views: 13.8ms | ActiveRecord: 2.2ms | Allocations: 2855)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:25:29 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"0", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."wednesday" = $6 AND "users"."thursday" = $7 AND "users"."friday" = $8 AND "users"."saturday" = $9 AND "users"."afternoon" = $10 AND "users"."evening" = $11 AND "users"."night" = $12[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/views/users/_hcw_results.html.erb:1
+  Rendered users/_hcw_results.html.erb (Duration: 7.9ms | Allocations: 813)
+  Rendered users/hcw_index.js.erb (Duration: 9.1ms | Allocations: 988)
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 2.0ms | Allocations: 2297)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 11:26:46 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 5329)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 10662)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:26:55 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"0", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"1", "friday"=>"1", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 13.8ms | Allocations: 6848)
+  Rendered users/hcw_index.js.erb (Duration: 14.5ms | Allocations: 7140)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 9831)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:26:58 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"0", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"1", "friday"=>"1", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 4.0ms | Allocations: 1883)
+  Rendered users/hcw_index.js.erb (Duration: 4.7ms | Allocations: 1949)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3203)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @users.length == 0%>
+  <%= No Results. %>
+<% end %>
+<div class="results">
+  <% @users.each do |user| %>
+  <div class="one_result">
+  <div class="yellow_rectangle"></div>
+    <% if user_signed_in? && user.zip_code %>
+      Zip Code: <%= user.zip_code %><br>
+    <% end %>
+    <% if user.gender %>
+      Gender: <% user.gender %><br>
+    <% end %>
+    <% if user.sunday == 1 %>
+      Needs Help on Sunday<br>
+    <% end %>
+    <% if user.monday == 1 %>
+      Needs Help on Monday<br>
+    <% end %>
+    <% if user.tuesday == 1 %>
+      Needs Help on Tuesday<br>
+    <% end %>
+    <% if user.wednesday == 1 %>
+      Needs Help on Wednesday<br>
+    <% end %>
+    <% if user.thursday == 1 %>
+      Needs Help on Thursday<br>
+    <% end %>
+    <% if user.friday == 1 %>
+      Needs Help on Friday<br>
+    <% end %>
+    <% if user.saturday == 1 %>
+      Needs Help on Saturday<br>
+    <% end %>
+    <% if user.morning == 1%>
+      Needs Help in the Morning<br>
+    <% end %>
+    <% if user.afternoon == 1%>
+      Needs Help in the Afternoon<br>
+    <% end %>
+    <% if user.evening == 1%>
+      Needs Help in the Evening<br>
+    <% end %>
+    <% if user.night == 1%>
+      Needs Help at Night<br>
+    <% end %>
+    <% if user.first_name %>
+      Name: <%= user.first_name%><br>
+    <% end %>
+    <% if user_signed_in? && user.cell_number %>
+      Phone Number: <%= user.cell_number %><br>
+    <% end %>
+    <% if user.yes_transit == 1%>
+      Transportation is Necessary<br>
+    <% end %>
+    <% if user.no_transit == 1%>
+      Transportation is Not Necessary<br>
+    <% end %>
+    <% if user.babysitting == 1%>
+      Needs Babysitting<br>
+    <% end %>
+    <% if user.grocery_shopping == 1%>
+      Needs Grocery Shopping<br>
+    <% end %>
+    <% if user.e_learning_assistance == 1%>
+      Needs Assistance With E-Learning<br>
+    <% end %>
+  </div>
+ <% end %>
+</div>
+):
+1:    <% if @users.length == 0%>
+2:      <%= No Results. %>
+3:    <% end %>
+4:    <div class="results">
+5:      <% @users.each do |user| %>
+6:      <div class="one_result">
+7:      <div class="yellow_rectangle"></div>
+8:        <% if user_signed_in? && user.zip_code %>
+9:          Zip Code: <%= user.zip_code %><br>
+10:        <% end %>
+11:        <% if user.gender %>
+12:          Gender: <% user.gender %><br>
+13:        <% end %>
+14:        <% if user.sunday == 1 %>
+15:          Needs Help on Sunday<br>
+16:        <% end %>
+17:        <% if user.monday == 1 %>
+18:          Needs Help on Monday<br>
+19:        <% end %>
+20:        <% if user.tuesday == 1 %>
+21:          Needs Help on Tuesday<br>
+22:        <% end %>
+23:        <% if user.wednesday == 1 %>
+24:          Needs Help on Wednesday<br>
+25:        <% end %>
+26:        <% if user.thursday == 1 %>
+27:          Needs Help on Thursday<br>
+28:        <% end %>
+29:        <% if user.friday == 1 %>
+30:          Needs Help on Friday<br>
+31:        <% end %>
+32:        <% if user.saturday == 1 %>
+33:          Needs Help on Saturday<br>
+34:        <% end %>
+35:        <% if user.morning == 1%>
+36:          Needs Help in the Morning<br>
+37:        <% end %>
+38:        <% if user.afternoon == 1%>
+39:          Needs Help in the Afternoon<br>
+40:        <% end %>
+41:        <% if user.evening == 1%>
+42:          Needs Help in the Evening<br>
+43:        <% end %>
+44:        <% if user.night == 1%>
+45:          Needs Help at Night<br>
+46:        <% end %>
+47:        <% if user.first_name %>
+48:          Name: <%= user.first_name%><br>
+49:        <% end %>
+50:        <% if user_signed_in? && user.cell_number %>
+51:          Phone Number: <%= user.cell_number %><br>
+52:        <% end %>
+53:        <% if user.yes_transit == 1%>
+54:          Transportation is Necessary<br>
+55:        <% end %>
+56:        <% if user.no_transit == 1%>
+57:          Transportation is Not Necessary<br>
+58:        <% end %>
+59:        <% if user.babysitting == 1%>
+60:          Needs Babysitting<br>
+61:        <% end %>
+62:        <% if user.grocery_shopping == 1%>
+63:          Needs Grocery Shopping<br>
+64:        <% end %>
+65:        <% if user.e_learning_assistance == 1%>
+66:          Needs Assistance With E-Learning<br>
+67:        <% end %>
+68:      </div>
+69:     <% end %>
+70:    </div>
+  
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:11:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:9:in `hero_index'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 11:27:31 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 575)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 10776)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:27:40 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"1", "monday"=>"0", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"0", "afternoon"=>"1", "evening"=>"0", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 1.8ms | Allocations: 1896)
+  Rendered users/hcw_index.js.erb (Duration: 3.0ms | Allocations: 2191)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4909)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @users.length == 0%>
+  <%= No Results. %>
+<% end %>
+<div class="results">
+  <% @users.each do |user| %>
+  <div class="one_result">
+  <div class="yellow_rectangle"></div>
+    <% if user_signed_in? && user.zip_code %>
+      Zip Code: <%= user.zip_code %><br>
+    <% end %>
+    <% if user.gender %>
+      Gender: <% user.gender %><br>
+    <% end %>
+    <% if user.sunday == 1 %>
+      Needs Help on Sunday<br>
+    <% end %>
+    <% if user.monday == 1 %>
+      Needs Help on Monday<br>
+    <% end %>
+    <% if user.tuesday == 1 %>
+      Needs Help on Tuesday<br>
+    <% end %>
+    <% if user.wednesday == 1 %>
+      Needs Help on Wednesday<br>
+    <% end %>
+    <% if user.thursday == 1 %>
+      Needs Help on Thursday<br>
+    <% end %>
+    <% if user.friday == 1 %>
+      Needs Help on Friday<br>
+    <% end %>
+    <% if user.saturday == 1 %>
+      Needs Help on Saturday<br>
+    <% end %>
+    <% if user.morning == 1%>
+      Needs Help in the Morning<br>
+    <% end %>
+    <% if user.afternoon == 1%>
+      Needs Help in the Afternoon<br>
+    <% end %>
+    <% if user.evening == 1%>
+      Needs Help in the Evening<br>
+    <% end %>
+    <% if user.night == 1%>
+      Needs Help at Night<br>
+    <% end %>
+    <% if user.first_name %>
+      Name: <%= user.first_name%><br>
+    <% end %>
+    <% if user_signed_in? && user.cell_number %>
+      Phone Number: <%= user.cell_number %><br>
+    <% end %>
+    <% if user.yes_transit == 1%>
+      Transportation is Necessary<br>
+    <% end %>
+    <% if user.no_transit == 1%>
+      Transportation is Not Necessary<br>
+    <% end %>
+    <% if user.babysitting == 1%>
+      Needs Babysitting<br>
+    <% end %>
+    <% if user.grocery_shopping == 1%>
+      Needs Grocery Shopping<br>
+    <% end %>
+    <% if user.e_learning_assistance == 1%>
+      Needs Assistance With E-Learning<br>
+    <% end %>
+  </div>
+ <% end %>
+</div>
+):
+1:    <% if @users.length == 0%>
+2:      <%= No Results. %>
+3:    <% end %>
+4:    <div class="results">
+5:      <% @users.each do |user| %>
+6:      <div class="one_result">
+7:      <div class="yellow_rectangle"></div>
+8:        <% if user_signed_in? && user.zip_code %>
+9:          Zip Code: <%= user.zip_code %><br>
+10:        <% end %>
+11:        <% if user.gender %>
+12:          Gender: <% user.gender %><br>
+13:        <% end %>
+14:        <% if user.sunday == 1 %>
+15:          Needs Help on Sunday<br>
+16:        <% end %>
+17:        <% if user.monday == 1 %>
+18:          Needs Help on Monday<br>
+19:        <% end %>
+20:        <% if user.tuesday == 1 %>
+21:          Needs Help on Tuesday<br>
+22:        <% end %>
+23:        <% if user.wednesday == 1 %>
+24:          Needs Help on Wednesday<br>
+25:        <% end %>
+26:        <% if user.thursday == 1 %>
+27:          Needs Help on Thursday<br>
+28:        <% end %>
+29:        <% if user.friday == 1 %>
+30:          Needs Help on Friday<br>
+31:        <% end %>
+32:        <% if user.saturday == 1 %>
+33:          Needs Help on Saturday<br>
+34:        <% end %>
+35:        <% if user.morning == 1%>
+36:          Needs Help in the Morning<br>
+37:        <% end %>
+38:        <% if user.afternoon == 1%>
+39:          Needs Help in the Afternoon<br>
+40:        <% end %>
+41:        <% if user.evening == 1%>
+42:          Needs Help in the Evening<br>
+43:        <% end %>
+44:        <% if user.night == 1%>
+45:          Needs Help at Night<br>
+46:        <% end %>
+47:        <% if user.first_name %>
+48:          Name: <%= user.first_name%><br>
+49:        <% end %>
+50:        <% if user_signed_in? && user.cell_number %>
+51:          Phone Number: <%= user.cell_number %><br>
+52:        <% end %>
+53:        <% if user.yes_transit == 1%>
+54:          Transportation is Necessary<br>
+55:        <% end %>
+56:        <% if user.no_transit == 1%>
+57:          Transportation is Not Necessary<br>
+58:        <% end %>
+59:        <% if user.babysitting == 1%>
+60:          Needs Babysitting<br>
+61:        <% end %>
+62:        <% if user.grocery_shopping == 1%>
+63:          Needs Grocery Shopping<br>
+64:        <% end %>
+65:        <% if user.e_learning_assistance == 1%>
+66:          Needs Assistance With E-Learning<br>
+67:        <% end %>
+68:      </div>
+69:     <% end %>
+70:    </div>
+  
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:11:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:9:in `hero_index'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 11:28:40 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.3ms | Allocations: 204)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 8.5ms | ActiveRecord: 5.0ms | Allocations: 30657)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:28:49 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 LIMIT $7[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 1.8ms | Allocations: 1844)
+  Rendered users/hcw_index.js.erb (Duration: 2.2ms | Allocations: 1910)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.3ms | Allocations: 6545)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @users.length == 0%>
+  <%= No Results. %>
+<% end %>
+<div class="results">
+  <% @users.each do |user| %>
+  <div class="one_result">
+  <div class="yellow_rectangle"></div>
+    <% if user_signed_in? && user.zip_code %>
+      Zip Code: <%= user.zip_code %><br>
+    <% end %>
+    <% if user.gender %>
+      Gender: <% user.gender %><br>
+    <% end %>
+    <% if user.sunday == 1 %>
+      Needs Help on Sunday<br>
+    <% end %>
+    <% if user.monday == 1 %>
+      Needs Help on Monday<br>
+    <% end %>
+    <% if user.tuesday == 1 %>
+      Needs Help on Tuesday<br>
+    <% end %>
+    <% if user.wednesday == 1 %>
+      Needs Help on Wednesday<br>
+    <% end %>
+    <% if user.thursday == 1 %>
+      Needs Help on Thursday<br>
+    <% end %>
+    <% if user.friday == 1 %>
+      Needs Help on Friday<br>
+    <% end %>
+    <% if user.saturday == 1 %>
+      Needs Help on Saturday<br>
+    <% end %>
+    <% if user.morning == 1%>
+      Needs Help in the Morning<br>
+    <% end %>
+    <% if user.afternoon == 1%>
+      Needs Help in the Afternoon<br>
+    <% end %>
+    <% if user.evening == 1%>
+      Needs Help in the Evening<br>
+    <% end %>
+    <% if user.night == 1%>
+      Needs Help at Night<br>
+    <% end %>
+    <% if user.first_name %>
+      Name: <%= user.first_name%><br>
+    <% end %>
+    <% if user_signed_in? && user.cell_number %>
+      Phone Number: <%= user.cell_number %><br>
+    <% end %>
+    <% if user.yes_transit == 1%>
+      Transportation is Necessary<br>
+    <% end %>
+    <% if user.no_transit == 1%>
+      Transportation is Not Necessary<br>
+    <% end %>
+    <% if user.babysitting == 1%>
+      Needs Babysitting<br>
+    <% end %>
+    <% if user.grocery_shopping == 1%>
+      Needs Grocery Shopping<br>
+    <% end %>
+    <% if user.e_learning_assistance == 1%>
+      Needs Assistance With E-Learning<br>
+    <% end %>
+  </div>
+ <% end %>
+</div>
+):
+1:    <% if @users.length == 0%>
+2:      <%= No Results. %>
+3:    <% end %>
+4:    <div class="results">
+5:      <% @users.each do |user| %>
+6:      <div class="one_result">
+7:      <div class="yellow_rectangle"></div>
+8:        <% if user_signed_in? && user.zip_code %>
+9:          Zip Code: <%= user.zip_code %><br>
+10:        <% end %>
+11:        <% if user.gender %>
+12:          Gender: <% user.gender %><br>
+13:        <% end %>
+14:        <% if user.sunday == 1 %>
+15:          Needs Help on Sunday<br>
+16:        <% end %>
+17:        <% if user.monday == 1 %>
+18:          Needs Help on Monday<br>
+19:        <% end %>
+20:        <% if user.tuesday == 1 %>
+21:          Needs Help on Tuesday<br>
+22:        <% end %>
+23:        <% if user.wednesday == 1 %>
+24:          Needs Help on Wednesday<br>
+25:        <% end %>
+26:        <% if user.thursday == 1 %>
+27:          Needs Help on Thursday<br>
+28:        <% end %>
+29:        <% if user.friday == 1 %>
+30:          Needs Help on Friday<br>
+31:        <% end %>
+32:        <% if user.saturday == 1 %>
+33:          Needs Help on Saturday<br>
+34:        <% end %>
+35:        <% if user.morning == 1%>
+36:          Needs Help in the Morning<br>
+37:        <% end %>
+38:        <% if user.afternoon == 1%>
+39:          Needs Help in the Afternoon<br>
+40:        <% end %>
+41:        <% if user.evening == 1%>
+42:          Needs Help in the Evening<br>
+43:        <% end %>
+44:        <% if user.night == 1%>
+45:          Needs Help at Night<br>
+46:        <% end %>
+47:        <% if user.first_name %>
+48:          Name: <%= user.first_name%><br>
+49:        <% end %>
+50:        <% if user_signed_in? && user.cell_number %>
+51:          Phone Number: <%= user.cell_number %><br>
+52:        <% end %>
+53:        <% if user.yes_transit == 1%>
+54:          Transportation is Necessary<br>
+55:        <% end %>
+56:        <% if user.no_transit == 1%>
+57:          Transportation is Not Necessary<br>
+58:        <% end %>
+59:        <% if user.babysitting == 1%>
+60:          Needs Babysitting<br>
+61:        <% end %>
+62:        <% if user.grocery_shopping == 1%>
+63:          Needs Grocery Shopping<br>
+64:        <% end %>
+65:        <% if user.e_learning_assistance == 1%>
+66:          Needs Assistance With E-Learning<br>
+67:        <% end %>
+68:      </div>
+69:     <% end %>
+70:    </div>
+  
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:13:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:11:in `hero_index'
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:30:08 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 LIMIT $7[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 1.6ms | Allocations: 1844)
+  Rendered users/hcw_index.js.erb (Duration: 1.8ms | Allocations: 1910)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 4.2ms | Allocations: 29337)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @users.length == 0%>
+  <%= No Results. %>
+<% end %>
+<div class="results">
+  <% @users.each do |user| %>
+  <div class="one_result">
+  <div class="yellow_rectangle"></div>
+    <% if user_signed_in? && user.zip_code %>
+      Zip Code: <%= user.zip_code %><br>
+    <% end %>
+    <% if user.gender %>
+      Gender: <% user.gender %><br>
+    <% end %>
+    <% if user.sunday == 1 %>
+      Needs Help on Sunday<br>
+    <% end %>
+    <% if user.monday == 1 %>
+      Needs Help on Monday<br>
+    <% end %>
+    <% if user.tuesday == 1 %>
+      Needs Help on Tuesday<br>
+    <% end %>
+    <% if user.wednesday == 1 %>
+      Needs Help on Wednesday<br>
+    <% end %>
+    <% if user.thursday == 1 %>
+      Needs Help on Thursday<br>
+    <% end %>
+    <% if user.friday == 1 %>
+      Needs Help on Friday<br>
+    <% end %>
+    <% if user.saturday == 1 %>
+      Needs Help on Saturday<br>
+    <% end %>
+    <% if user.morning == 1%>
+      Needs Help in the Morning<br>
+    <% end %>
+    <% if user.afternoon == 1%>
+      Needs Help in the Afternoon<br>
+    <% end %>
+    <% if user.evening == 1%>
+      Needs Help in the Evening<br>
+    <% end %>
+    <% if user.night == 1%>
+      Needs Help at Night<br>
+    <% end %>
+    <% if user.first_name %>
+      Name: <%= user.first_name%><br>
+    <% end %>
+    <% if user_signed_in? && user.cell_number %>
+      Phone Number: <%= user.cell_number %><br>
+    <% end %>
+    <% if user.yes_transit == 1%>
+      Transportation is Necessary<br>
+    <% end %>
+    <% if user.no_transit == 1%>
+      Transportation is Not Necessary<br>
+    <% end %>
+    <% if user.babysitting == 1%>
+      Needs Babysitting<br>
+    <% end %>
+    <% if user.grocery_shopping == 1%>
+      Needs Grocery Shopping<br>
+    <% end %>
+    <% if user.e_learning_assistance == 1%>
+      Needs Assistance With E-Learning<br>
+    <% end %>
+  </div>
+ <% end %>
+</div>
+):
+1:    <% if @users.length == 0%>
+2:      <%= No Results. %>
+3:    <% end %>
+4:    <div class="results">
+5:      <% @users.each do |user| %>
+6:      <div class="one_result">
+7:      <div class="yellow_rectangle"></div>
+8:        <% if user_signed_in? && user.zip_code %>
+9:          Zip Code: <%= user.zip_code %><br>
+10:        <% end %>
+11:        <% if user.gender %>
+12:          Gender: <% user.gender %><br>
+13:        <% end %>
+14:        <% if user.sunday == 1 %>
+15:          Needs Help on Sunday<br>
+16:        <% end %>
+17:        <% if user.monday == 1 %>
+18:          Needs Help on Monday<br>
+19:        <% end %>
+20:        <% if user.tuesday == 1 %>
+21:          Needs Help on Tuesday<br>
+22:        <% end %>
+23:        <% if user.wednesday == 1 %>
+24:          Needs Help on Wednesday<br>
+25:        <% end %>
+26:        <% if user.thursday == 1 %>
+27:          Needs Help on Thursday<br>
+28:        <% end %>
+29:        <% if user.friday == 1 %>
+30:          Needs Help on Friday<br>
+31:        <% end %>
+32:        <% if user.saturday == 1 %>
+33:          Needs Help on Saturday<br>
+34:        <% end %>
+35:        <% if user.morning == 1%>
+36:          Needs Help in the Morning<br>
+37:        <% end %>
+38:        <% if user.afternoon == 1%>
+39:          Needs Help in the Afternoon<br>
+40:        <% end %>
+41:        <% if user.evening == 1%>
+42:          Needs Help in the Evening<br>
+43:        <% end %>
+44:        <% if user.night == 1%>
+45:          Needs Help at Night<br>
+46:        <% end %>
+47:        <% if user.first_name %>
+48:          Name: <%= user.first_name%><br>
+49:        <% end %>
+50:        <% if user_signed_in? && user.cell_number %>
+51:          Phone Number: <%= user.cell_number %><br>
+52:        <% end %>
+53:        <% if user.yes_transit == 1%>
+54:          Transportation is Necessary<br>
+55:        <% end %>
+56:        <% if user.no_transit == 1%>
+57:          Transportation is Not Necessary<br>
+58:        <% end %>
+59:        <% if user.babysitting == 1%>
+60:          Needs Babysitting<br>
+61:        <% end %>
+62:        <% if user.grocery_shopping == 1%>
+63:          Needs Grocery Shopping<br>
+64:        <% end %>
+65:        <% if user.e_learning_assistance == 1%>
+66:          Needs Assistance With E-Learning<br>
+67:        <% end %>
+68:      </div>
+69:     <% end %>
+70:    </div>
+  
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:2: syntax error, unexpected ')'
+app/views/users/_hcw_results.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/_hcw_results.html.erb:72: syntax error, unexpected `end', expecting ')'
+app/views/users/hcw_index.js.erb:2
+app/controllers/users_controller.rb:13:in `block (2 levels) in hero_index'
+app/controllers/users_controller.rb:11:in `hero_index'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 11:30:53 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 585)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5430)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 13.6ms | ActiveRecord: 3.4ms | Allocations: 33713)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:30:59 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."sunday" = $2 AND "users"."monday" = $3 AND "users"."tuesday" = $4 LIMIT $5[0m  [["volunteer", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."sunday" = $2 AND "users"."monday" = $3 AND "users"."tuesday" = $4[0m  [["volunteer", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 4.9ms | Allocations: 4028)
+  Rendered users/hcw_index.js.erb (Duration: 19.3ms | Allocations: 17451)
+Completed 200 OK in 33ms (Views: 22.7ms | ActiveRecord: 1.0ms | Allocations: 24438)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:31:31 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"1", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11 LIMIT $12[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered users/hcw_index.js.erb (Duration: 0.4ms | Allocations: 183)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 3009)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:32:27 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"1", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11 LIMIT $12[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 0.8ms | Allocations: 803)
+  Rendered users/hcw_index.js.erb (Duration: 1.9ms | Allocations: 1224)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 1.1ms | Allocations: 5499)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:32:28 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"1", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11 LIMIT $12[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered users/hcw_index.js.erb (Duration: 0.4ms | Allocations: 203)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.2ms | Allocations: 3032)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bbabysitting%5D=1&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:32:29 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"1", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"1", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11 LIMIT $12[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."babysitting" = $2 AND "users"."grocery_shopping" = $3 AND "users"."e_learning_assistance" = $4 AND "users"."sunday" = $5 AND "users"."monday" = $6 AND "users"."tuesday" = $7 AND "users"."morning" = $8 AND "users"."afternoon" = $9 AND "users"."evening" = $10 AND "users"."night" = $11[0m  [["volunteer", 1], ["babysitting", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered users/hcw_index.js.erb (Duration: 0.4ms | Allocations: 203)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 3029)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:32:37 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"1", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."tuesday" = $6 AND "users"."saturday" = $7 LIMIT $8[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["saturday", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."tuesday" = $6 AND "users"."saturday" = $7[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["saturday", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 1.4ms | Allocations: 772)
+  Rendered users/hcw_index.js.erb (Duration: 4.9ms | Allocations: 4127)
+Completed 200 OK in 15ms (Views: 5.6ms | ActiveRecord: 1.3ms | Allocations: 8663)
+
+
+Started GET "/users/hero_index?user%5Bvolunteer%5D=0&user%5Bvolunteer%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Bgrocery_shopping%5D=1&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bsunday%5D=1&user%5Bmonday%5D=0&user%5Bmonday%5D=1&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bthursday%5D=1&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bevening%5D=1&user%5Bnight%5D=0&user%5Bnight%5D=1&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:32:50 -0500
+Processing by UsersController#hero_index as JS
+  Parameters: {"user"=>{"volunteer"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"1", "e_learning_assistance"=>"1", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"1", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "morning"=>"1", "afternoon"=>"1", "evening"=>"1", "night"=>"1", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."tuesday" = $6 AND "users"."wednesday" = $7 AND "users"."thursday" = $8 AND "users"."friday" = $9 AND "users"."saturday" = $10 AND "users"."morning" = $11 AND "users"."afternoon" = $12 AND "users"."evening" = $13 AND "users"."night" = $14 LIMIT $15[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:9:in `p'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."volunteer" = $1 AND "users"."grocery_shopping" = $2 AND "users"."e_learning_assistance" = $3 AND "users"."sunday" = $4 AND "users"."monday" = $5 AND "users"."tuesday" = $6 AND "users"."wednesday" = $7 AND "users"."thursday" = $8 AND "users"."friday" = $9 AND "users"."saturday" = $10 AND "users"."morning" = $11 AND "users"."afternoon" = $12 AND "users"."evening" = $13 AND "users"."night" = $14[0m  [["volunteer", 1], ["grocery_shopping", 1], ["e_learning_assistance", 1], ["sunday", 1], ["monday", 1], ["tuesday", 1], ["wednesday", 1], ["thursday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1], ["evening", 1], ["night", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `hero_index'
+  Rendering users/hcw_index.js.erb
+  Rendered users/_hcw_results.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered users/hcw_index.js.erb (Duration: 1.1ms | Allocations: 203)
+Completed 200 OK in 21ms (Views: 2.5ms | ActiveRecord: 4.2ms | Allocations: 3124)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 11:33:00 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"0", "friday"=>"1", "saturday"=>"1", "morning"=>"1", "afternoon"=>"1", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."wednesday" = $2 AND "users"."friday" = $3 AND "users"."saturday" = $4 AND "users"."morning" = $5 AND "users"."afternoon" = $6 LIMIT $7[0m  [["hero", 1], ["wednesday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:23:in `p'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."wednesday" = $2 AND "users"."friday" = $3 AND "users"."saturday" = $4 AND "users"."morning" = $5 AND "users"."afternoon" = $6[0m  [["hero", 1], ["wednesday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `volunteer_index'
+  Rendering users/sitter_index.js.erb
+  Rendered users/_sitter_results.html.erb (Duration: 4.5ms | Allocations: 2968)
+  Rendered users/sitter_index.js.erb (Duration: 12.7ms | Allocations: 10834)
+Completed 200 OK in 43ms (Views: 13.8ms | ActiveRecord: 2.6ms | Allocations: 16259)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Bwednesday%5D=0&user%5Bwednesday%5D=1&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bfriday%5D=1&user%5Bsaturday%5D=0&user%5Bsaturday%5D=1&user%5Bmorning%5D=0&user%5Bmorning%5D=1&user%5Bafternoon%5D=0&user%5Bafternoon%5D=1&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Byes_transit%5D=1&user%5Bno_transit%5D=0&user%5Bno_transit%5D=1" for 127.0.0.1 at 2020-06-25 11:33:07 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"0", "sunday"=>"0", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"1", "thursday"=>"0", "friday"=>"1", "saturday"=>"1", "morning"=>"1", "afternoon"=>"1", "evening"=>"0", "night"=>"0", "yes_transit"=>"1", "no_transit"=>"1"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."wednesday" = $2 AND "users"."friday" = $3 AND "users"."saturday" = $4 AND "users"."morning" = $5 AND "users"."afternoon" = $6 AND "users"."yes_transit" = $7 AND "users"."no_transit" = $8 LIMIT $9[0m  [["hero", 1], ["wednesday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1], ["yes_transit", 1], ["no_transit", 1], ["LIMIT", 11]]
+  ↳ app/controllers/users_controller.rb:23:in `p'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."wednesday" = $2 AND "users"."friday" = $3 AND "users"."saturday" = $4 AND "users"."morning" = $5 AND "users"."afternoon" = $6 AND "users"."yes_transit" = $7 AND "users"."no_transit" = $8[0m  [["hero", 1], ["wednesday", 1], ["friday", 1], ["saturday", 1], ["morning", 1], ["afternoon", 1], ["yes_transit", 1], ["no_transit", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `volunteer_index'
+  Rendering users/sitter_index.js.erb
+  Rendered users/_sitter_results.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered users/sitter_index.js.erb (Duration: 0.8ms | Allocations: 203)
+Completed 200 OK in 19ms (Views: 1.9ms | ActiveRecord: 3.0ms | Allocations: 2948)
+
+
