@@ -16,9 +16,11 @@
        $(".volunteer_leftover").show();
        $("#hero_search_div").show();
        $("#volunteer_search_div").hide();
+       window.scrollBy(0, 545);
     } else if (this.checked != true) {
        $("#search-results-append").empty();
        $(".volunteer_leftover").hide();
+       window.scrollBy(0, -545);
     }
   });
 
@@ -32,22 +34,18 @@
        $(".hero_leftover").show();
        $("#volunteer_search_div").show();
        $("#hero_search_div").hide();
+       window.scrollBy(0, 545);
     } else if (this.checked != true) {
        $("#search-results-append").empty();
        $(".hero_leftover").hide();
+       window.scrollBy(0, -545);
     }
   });   
 });
 </script>
 
 <div class="blurb_rosie_login">
-  <div class="blurb">
-    <h2>COVID-19 Volunteers For Victory</h1>
-    <br>
-
-    Hi, I'm Jordan Colgan and I came up with this website so we can match volunteers willing to help the healthcare heroes and essential worker warriors who are working around the clock to fight and win the war against COVID-19. THANK YOU.
-  </div>
-  
+    <h2>COVID-19 Volunteers For Victory</h2><br><br><br><br><br><br>  
   <div class="rosie">
     <img src="https://images.fastcompany.net/image/upload/w_800,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/06/p-2-90176641-what-the-iconic-rosie-the-riveter-poster-tktktk-1.jpg">
   </div>
