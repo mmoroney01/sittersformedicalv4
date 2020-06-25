@@ -20681,3 +20681,65 @@ Processing by Users::SessionsController#create as JS
 Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 827)
 
 
+Started GET "/" for 127.0.0.1 at 2020-06-25 10:21:56 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms | Allocations: 1014)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 10:21:56 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.6ms | Allocations: 657)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 6384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 42.4ms | ActiveRecord: 6.0ms | Allocations: 49630)
+
+
+Started GET "/users/volunteer_index?user%5Bhero%5D=0&user%5Bhero%5D=1&user%5Bzip_code%5D=&user%5Bbabysitting%5D=0&user%5Bgrocery_shopping%5D=0&user%5Be_learning_assistance%5D=0&user%5Be_learning_assistance%5D=1&user%5Bsunday%5D=0&user%5Bmonday%5D=0&user%5Btuesday%5D=0&user%5Btuesday%5D=1&user%5Bwednesday%5D=0&user%5Bthursday%5D=0&user%5Bfriday%5D=0&user%5Bsaturday%5D=0&user%5Bmorning%5D=0&user%5Bafternoon%5D=0&user%5Bevening%5D=0&user%5Bnight%5D=0&user%5Byes_transit%5D=0&user%5Bno_transit%5D=0" for 127.0.0.1 at 2020-06-25 10:23:41 -0500
+Processing by UsersController#volunteer_index as JS
+  Parameters: {"user"=>{"hero"=>"1", "zip_code"=>"", "babysitting"=>"0", "grocery_shopping"=>"0", "e_learning_assistance"=>"1", "sunday"=>"0", "monday"=>"0", "tuesday"=>"1", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "morning"=>"0", "afternoon"=>"0", "evening"=>"0", "night"=>"0", "yes_transit"=>"0", "no_transit"=>"0"}}
+  Rendering users/sitter_index.js.erb
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."hero" = $1 AND "users"."e_learning_assistance" = $2 AND "users"."tuesday" = $3[0m  [["hero", 1], ["e_learning_assistance", 1], ["tuesday", 1]]
+  ↳ app/views/users/_sitter_results.html.erb:1
+  Rendered users/_sitter_results.html.erb (Duration: 14.6ms | Allocations: 8472)
+  Rendered users/sitter_index.js.erb (Duration: 34.1ms | Allocations: 29366)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 2.7ms | Allocations: 32131)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 10:27:28 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 10711)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-25 10:27:49 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 573)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 10670)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-06-25 10:27:53 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 198)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 5494)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 10124)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-06-25 10:27:56 -0500
+Processing by Users::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 769)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
