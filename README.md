@@ -1,30 +1,13 @@
+# Volunteers for Victory
 
-  def create
-    p user_params
-    if !user_params[:email] || !user_params[:password]
-      p "AAA"
-      redirect_to "/users/sign_in"
-    else
-      @user = User.where(user_params)
-      p @user
-      redirect_to "/"
-    end
-  end
+### Volunteers for Victory aims to pair medical personnel who have children with child care workers during the COVID-19 pandemic.
+
+##### Volunteers for Victory is created using Ruby on Rails, PostgreSQL, and hosted to Heroku at https://limitless-reef-77658.herokuapp.com/users/sign_in.
 
 
 
-      <% if flash[:alert].length > 1 %>
-        <% flash[:alert].each do |error| %>
-        <% end %> 
-        <%= flash[:alert].length %>
-      <% end %>
 
-
-
-      <% if flash[:alert] %>
-           <% flash[:alert].each do |error| %>
-             <%= error %>
-           <% end %>
-         <% else %>
-           <%= "no errors"%>
-         <% end %>
+    Titles and internal titles
+    Introduction - the project's aim
+    Technologies
+    Launch
